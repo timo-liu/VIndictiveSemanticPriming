@@ -1,0 +1,11 @@
+{"time":"2026-01-11T17:21:34.5756785-08:00","level":"INFO","msg":"stream: starting","core version":"0.23.1"}
+{"time":"2026-01-11T17:21:34.9140402-08:00","level":"INFO","msg":"stream: created new stream","id":"bohd88dr"}
+{"time":"2026-01-11T17:21:34.9140402-08:00","level":"INFO","msg":"handler: started","stream_id":"bohd88dr"}
+{"time":"2026-01-11T17:21:34.916854-08:00","level":"INFO","msg":"stream: started","id":"bohd88dr"}
+{"time":"2026-01-11T17:21:34.916854-08:00","level":"INFO","msg":"writer: started","stream_id":"bohd88dr"}
+{"time":"2026-01-11T17:21:34.916854-08:00","level":"INFO","msg":"sender: started","stream_id":"bohd88dr"}
+{"time":"2026-01-11T17:21:36.243313-08:00","level":"INFO","msg":"stream: closing","id":"bohd88dr"}
+{"time":"2026-01-11T17:21:36.8484515-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-01-11T17:21:37.2187176-08:00","level":"INFO","msg":"handler: closed","stream_id":"bohd88dr"}
+{"time":"2026-01-11T17:21:37.221588-08:00","level":"INFO","msg":"sender: closed","stream_id":"bohd88dr"}
+{"time":"2026-01-11T17:21:37.221588-08:00","level":"INFO","msg":"stream: closed","id":"bohd88dr"}

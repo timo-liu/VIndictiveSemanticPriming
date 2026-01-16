@@ -1,0 +1,109 @@
+Epoch (1/50) | Train MSE: 0.816010
+Epoch (1/50) | Val MSE: 0.667799
+Epoch (2/50) | Train MSE: 0.611887
+Epoch (2/50) | Val MSE: 0.597852
+Epoch (3/50) | Train MSE: 0.568871
+Epoch (3/50) | Val MSE: 0.567437
+Epoch (4/50) | Train MSE: 0.546593
+Epoch (4/50) | Val MSE: 0.571644
+Epoch (5/50) | Train MSE: 0.531118
+Epoch (5/50) | Val MSE: 0.548373
+Epoch (6/50) | Train MSE: 0.523594
+Epoch (6/50) | Val MSE: 0.557680
+Epoch (7/50) | Train MSE: 0.519144
+Epoch (7/50) | Val MSE: 0.564497
+Epoch (8/50) | Train MSE: 0.513693
+Epoch (8/50) | Val MSE: 0.572379
+Epoch (9/50) | Train MSE: 0.510334
+Epoch (9/50) | Val MSE: 0.557138
+Epoch (10/50) | Train MSE: 0.509161
+Epoch (10/50) | Val MSE: 0.546500
+Epoch (11/50) | Train MSE: 0.503965
+Epoch (11/50) | Val MSE: 0.555173
+Epoch (12/50) | Train MSE: 0.503201
+Epoch (12/50) | Val MSE: 0.551054
+Epoch (13/50) | Train MSE: 0.502543
+Epoch (13/50) | Val MSE: 0.553088
+Epoch (14/50) | Train MSE: 0.498812
+Epoch (14/50) | Val MSE: 0.558587
+Epoch (15/50) | Train MSE: 0.496763
+Epoch (15/50) | Val MSE: 0.566676
+Early stopping triggered.
+[0.4542905390262604, 0.5339730381965637, 0.37961527705192566, 0.7240666747093201, 0.5132509469985962, 0.7479751706123352, 0.44297152757644653, 0.37922731041908264, 0.008676650002598763, 0.3272702693939209]
+C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\try_to_train.py:191: DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments. To learn more, see the migration guide https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+  preds_denorm = np.array(preds)
+tensor([[ 511.2474],
+        [ 456.7299],
+        [ 873.7611],
+        [ 512.3445],
+        [ 400.6691],
+        [ 485.6376],
+        [ 433.6571],
+        [ 451.9048],
+        [ 560.1609],
+        [ 466.8486],
+        [ 564.7623],
+        [ 468.8886],
+        [ 535.2452],
+        [ 422.4086],
+        [ 520.6365],
+        [ 591.5413],
+        [ 537.2887],
+        [ 480.9027],
+        [ 377.3953],
+        [  42.1295],
+        [ 583.7103],
+        [ 434.4385],
+        [ 524.1872],
+        [ 613.5168],
+        [ 684.0762],
+        [ 631.1600],
+        [1023.8993],
+        [ 523.7855],
+        [ 544.9546],
+        [ 567.6716]])
+[[ 511.24744 ]
+ [ 456.72995 ]
+ [ 873.7611  ]
+ [ 512.3445  ]
+ [ 400.66907 ]
+ [ 485.63763 ]
+ [ 433.6571  ]
+ [ 451.9048  ]
+ [ 560.1609  ]
+ [ 466.84863 ]
+ [ 564.7623  ]
+ [ 468.8886  ]
+ [ 535.24524 ]
+ [ 422.4086  ]
+ [ 520.63654 ]
+ [ 591.54126 ]
+ [ 537.2887  ]
+ [ 480.90268 ]
+ [ 377.39526 ]
+ [  42.129547]
+ [ 583.71027 ]
+ [ 434.4385  ]
+ [ 524.1872  ]
+ [ 613.51685 ]
+ [ 684.0762  ]
+ [ 631.16003 ]
+ [1023.8993  ]
+ [ 523.78546 ]
+ [ 544.9546  ]
+ [ 567.6716  ]]
+Traceback (most recent call last):
+  File "C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\try_to_train.py", line 221, in <module>
+    res_pred = linregress(cos_sims, preds_denorm)
+  File "C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\.venv\Lib\site-packages\scipy\stats\_axis_nan_policy.py", line 653, in axis_nan_policy_wrapper
+    res = np.apply_along_axis(hypotest_fun, axis=0, arr=x)
+  File "C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\.venv\Lib\site-packages\numpy\lib\_shape_base_impl.py", line 390, in apply_along_axis
+    res = asanyarray(func1d(inarr_view[ind0], *args, **kwargs))
+                     ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\.venv\Lib\site-packages\scipy\stats\_axis_nan_policy.py", line 650, in hypotest_fun
+    return result_to_tuple(hypotest_fun_out(*samples, **kwds), n_out)
+                           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\.venv\Lib\site-packages\scipy\stats\_stats_py.py", line 10777, in linregress
+    raise ValueError("Cannot calculate a linear regression "
+                     "if all x values are identical")
+ValueError: Cannot calculate a linear regression if all x values are identical

@@ -1,0 +1,45 @@
+Epoch (1/50) | Train MSE: 0.909908
+Epoch (1/50) | Val MSE: 0.878767
+Epoch (2/50) | Train MSE: 0.765157
+Epoch (2/50) | Val MSE: 0.784107
+Epoch (3/50) | Train MSE: 0.701007
+Epoch (3/50) | Val MSE: 0.760901
+Epoch (4/50) | Train MSE: 0.662484
+Epoch (4/50) | Val MSE: 0.755205
+Epoch (5/50) | Train MSE: 0.643982
+Epoch (5/50) | Val MSE: 0.752079
+Epoch (6/50) | Train MSE: 0.630739
+Epoch (6/50) | Val MSE: 0.769927
+Epoch (7/50) | Train MSE: 0.623235
+Epoch (7/50) | Val MSE: 0.740982
+Epoch (8/50) | Train MSE: 0.615172
+Epoch (8/50) | Val MSE: 0.733877
+Epoch (9/50) | Train MSE: 0.611762
+Epoch (9/50) | Val MSE: 0.747658
+Epoch (10/50) | Train MSE: 0.604744
+Epoch (10/50) | Val MSE: 0.756105
+Epoch (11/50) | Train MSE: 0.604382
+Epoch (11/50) | Val MSE: 0.761805
+Epoch (12/50) | Train MSE: 0.600336
+Epoch (12/50) | Val MSE: 0.753732
+Epoch (13/50) | Train MSE: 0.596542
+Epoch (13/50) | Val MSE: 0.745213
+Early stopping triggered.
+[0.32647350430488586, 0.8089950680732727, 0.578944742679596, 0.4860230088233948, 0.5641179084777832, 0.7677797079086304, 0.3911958336830139, 0.5567728877067566, 0.7157767415046692, 0.5663982033729553]
+C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\try_to_train.py:191: DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments. To learn more, see the migration guide https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+  preds_denorm = np.array(preds)
+Traceback (most recent call last):
+  File "C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\try_to_train.py", line 217, in <module>
+    res_pred = linregress(cos_sims, preds_denorm)
+  File "C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\.venv\Lib\site-packages\scipy\stats\_axis_nan_policy.py", line 653, in axis_nan_policy_wrapper
+    res = np.apply_along_axis(hypotest_fun, axis=0, arr=x)
+  File "C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\.venv\Lib\site-packages\numpy\lib\_shape_base_impl.py", line 390, in apply_along_axis
+    res = asanyarray(func1d(inarr_view[ind0], *args, **kwargs))
+                     ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\.venv\Lib\site-packages\scipy\stats\_axis_nan_policy.py", line 650, in hypotest_fun
+    return result_to_tuple(hypotest_fun_out(*samples, **kwds), n_out)
+                           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\.venv\Lib\site-packages\scipy\stats\_stats_py.py", line 10777, in linregress
+    raise ValueError("Cannot calculate a linear regression "
+                     "if all x values are identical")
+ValueError: Cannot calculate a linear regression if all x values are identical

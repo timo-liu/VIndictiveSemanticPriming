@@ -1,0 +1,11 @@
+{"time":"2026-01-11T18:42:01.7801844-08:00","level":"INFO","msg":"stream: starting","core version":"0.23.1"}
+{"time":"2026-01-11T18:42:02.1452349-08:00","level":"INFO","msg":"stream: created new stream","id":"hevcchlb"}
+{"time":"2026-01-11T18:42:02.1463176-08:00","level":"INFO","msg":"handler: started","stream_id":"hevcchlb"}
+{"time":"2026-01-11T18:42:02.1487965-08:00","level":"INFO","msg":"stream: started","id":"hevcchlb"}
+{"time":"2026-01-11T18:42:02.1494772-08:00","level":"INFO","msg":"sender: started","stream_id":"hevcchlb"}
+{"time":"2026-01-11T18:42:02.1494772-08:00","level":"INFO","msg":"writer: started","stream_id":"hevcchlb"}
+{"time":"2026-01-11T18:43:04.9586088-08:00","level":"INFO","msg":"stream: closing","id":"hevcchlb"}
+{"time":"2026-01-11T18:43:05.353308-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-01-11T18:43:05.5765413-08:00","level":"INFO","msg":"handler: closed","stream_id":"hevcchlb"}
+{"time":"2026-01-11T18:43:05.5781932-08:00","level":"INFO","msg":"sender: closed","stream_id":"hevcchlb"}
+{"time":"2026-01-11T18:43:05.5781932-08:00","level":"INFO","msg":"stream: closed","id":"hevcchlb"}

@@ -1,0 +1,20 @@
+Epoch (1/50) | Train MSE: 1.014972
+Epoch (1/50) | Val MSE: 0.972820
+Epoch (2/50) | Train MSE: 1.008782
+Epoch (2/50) | Val MSE: 0.966612
+Epoch (3/50) | Train MSE: 1.002282
+Epoch (3/50) | Val MSE: 0.968046
+Epoch (4/50) | Train MSE: 0.996155
+Epoch (4/50) | Val MSE: 0.983397
+Epoch (5/50) | Train MSE: 0.983092
+Epoch (5/50) | Val MSE: 0.994711
+Epoch (6/50) | Train MSE: 0.972628
+Epoch (6/50) | Val MSE: 0.991142
+Epoch (7/50) | Train MSE: 0.957647
+Epoch (7/50) | Val MSE: 0.985110
+Early stopping triggered.
+Traceback (most recent call last):
+  File "C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\try_to_train.py", line 188, in <module>
+    preds = preds * y_std + y_mean
+            ~~~~~~^~~~~~~
+TypeError: only integer tensors of a single element can be converted to an index

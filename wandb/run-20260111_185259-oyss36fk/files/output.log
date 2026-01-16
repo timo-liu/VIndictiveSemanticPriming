@@ -1,0 +1,33 @@
+Epoch (1/50) | Train MSE: 0.749040
+Epoch (1/50) | Val MSE: 0.577363
+Epoch (2/50) | Train MSE: 0.531058
+Epoch (2/50) | Val MSE: 0.525044
+Epoch (3/50) | Train MSE: 0.489515
+Epoch (3/50) | Val MSE: 0.485582
+Epoch (4/50) | Train MSE: 0.467772
+Epoch (4/50) | Val MSE: 0.485575
+Epoch (5/50) | Train MSE: 0.459463
+Epoch (5/50) | Val MSE: 0.474148
+Epoch (6/50) | Train MSE: 0.448077
+Epoch (6/50) | Val MSE: 0.474170
+Epoch (7/50) | Train MSE: 0.443813
+Epoch (7/50) | Val MSE: 0.460175
+Epoch (8/50) | Train MSE: 0.439372
+Epoch (8/50) | Val MSE: 0.462289
+Epoch (9/50) | Train MSE: 0.435437
+Epoch (9/50) | Val MSE: 0.461243
+Epoch (10/50) | Train MSE: 0.434123
+Epoch (10/50) | Val MSE: 0.450843
+Epoch (11/50) | Train MSE: 0.430922
+Epoch (11/50) | Val MSE: 0.452750
+Epoch (12/50) | Train MSE: 0.430355
+Epoch (12/50) | Val MSE: 0.464604
+Epoch (13/50) | Train MSE: 0.430169
+Epoch (13/50) | Val MSE: 0.457022
+Epoch (14/50) | Train MSE: 0.426704
+Epoch (14/50) | Val MSE: 0.453988
+Epoch (15/50) | Train MSE: 0.426491
+Epoch (15/50) | Val MSE: 0.460437
+Early stopping triggered.
+C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\try_to_train.py:190: DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments. To learn more, see the migration guide https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+  preds_denorm = np.array(preds).squeeze().tolist()

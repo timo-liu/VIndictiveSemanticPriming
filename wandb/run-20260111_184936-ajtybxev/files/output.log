@@ -1,0 +1,29 @@
+Epoch (1/50) | Train MSE: 0.695262
+Epoch (1/50) | Val MSE: 0.590300
+Epoch (2/50) | Train MSE: 0.488774
+Epoch (2/50) | Val MSE: 0.529507
+Epoch (3/50) | Train MSE: 0.453217
+Epoch (3/50) | Val MSE: 0.523208
+Epoch (4/50) | Train MSE: 0.439385
+Epoch (4/50) | Val MSE: 0.513688
+Epoch (5/50) | Train MSE: 0.430418
+Epoch (5/50) | Val MSE: 0.505419
+Epoch (6/50) | Train MSE: 0.426354
+Epoch (6/50) | Val MSE: 0.510624
+Epoch (7/50) | Train MSE: 0.423887
+Epoch (7/50) | Val MSE: 0.506423
+Epoch (8/50) | Train MSE: 0.417812
+Epoch (8/50) | Val MSE: 0.495159
+Epoch (9/50) | Train MSE: 0.416926
+Epoch (9/50) | Val MSE: 0.496965
+Epoch (10/50) | Train MSE: 0.411311
+Epoch (10/50) | Val MSE: 0.517368
+Epoch (11/50) | Train MSE: 0.409948
+Epoch (11/50) | Val MSE: 0.511005
+Epoch (12/50) | Train MSE: 0.410880
+Epoch (12/50) | Val MSE: 0.503066
+Epoch (13/50) | Train MSE: 0.406069
+Epoch (13/50) | Val MSE: 0.504295
+Early stopping triggered.
+C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\try_to_train.py:190: DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments. To learn more, see the migration guide https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+  preds_denorm = np.array(preds).squeeze().tolist()

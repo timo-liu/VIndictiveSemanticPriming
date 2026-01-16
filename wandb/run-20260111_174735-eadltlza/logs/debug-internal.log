@@ -1,0 +1,11 @@
+{"time":"2026-01-11T17:47:38.3418279-08:00","level":"INFO","msg":"stream: starting","core version":"0.23.1"}
+{"time":"2026-01-11T17:47:38.6603203-08:00","level":"INFO","msg":"stream: created new stream","id":"eadltlza"}
+{"time":"2026-01-11T17:47:38.6603203-08:00","level":"INFO","msg":"handler: started","stream_id":"eadltlza"}
+{"time":"2026-01-11T17:47:38.6622116-08:00","level":"INFO","msg":"stream: started","id":"eadltlza"}
+{"time":"2026-01-11T17:47:38.6629702-08:00","level":"INFO","msg":"writer: started","stream_id":"eadltlza"}
+{"time":"2026-01-11T17:47:38.6629702-08:00","level":"INFO","msg":"sender: started","stream_id":"eadltlza"}
+{"time":"2026-01-11T17:47:45.9464911-08:00","level":"INFO","msg":"stream: closing","id":"eadltlza"}
+{"time":"2026-01-11T17:47:46.3599808-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-01-11T17:47:46.6293648-08:00","level":"INFO","msg":"handler: closed","stream_id":"eadltlza"}
+{"time":"2026-01-11T17:47:46.6368609-08:00","level":"INFO","msg":"sender: closed","stream_id":"eadltlza"}
+{"time":"2026-01-11T17:47:46.6368609-08:00","level":"INFO","msg":"stream: closed","id":"eadltlza"}

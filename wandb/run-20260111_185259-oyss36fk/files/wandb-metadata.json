@@ -1,0 +1,39 @@
+{
+  "os":  "Windows-11-10.0.26100-SP0",
+  "python":  "CPython 3.14.2",
+  "startedAt":  "2026-01-12T02:52:59.495938Z",
+  "args":  [
+    "data/all naming subjects.xlsx",
+    "--patience",
+    "5",
+    "--batch_size",
+    "128",
+    "--data_size",
+    "10_000",
+    "--primecondition",
+    "2",
+    "--epochs",
+    "50",
+    "-c",
+    "encoder_layer_10"
+  ],
+  "program":  "C:\\Users\\timoy\\OneDrive\\Desktop\\VindictiveSemanticPriming\\try_to_train.py",
+  "codePath":  "try_to_train.py",
+  "codePathLocal":  "try_to_train.py",
+  "email":  "tiyliu@ucdavis.edu",
+  "root":  "C:\\Users\\timoy\\OneDrive\\Desktop\\VindictiveSemanticPriming",
+  "host":  "Timo-works",
+  "executable":  "C:\\Users\\timoy\\OneDrive\\Desktop\\VindictiveSemanticPriming\\.venv\\Scripts\\python.exe",
+  "cpu_count":  10,
+  "cpu_count_logical":  12,
+  "disk":  {
+    "/":  {
+      "total":  "486011826176",
+      "used":  "318724931584"
+    }
+  },
+  "memory":  {
+    "total":  "16849293312"
+  },
+  "writerId":  "rnl2foaeayntwmbdpcjuutq9eg47mqmx"
+}

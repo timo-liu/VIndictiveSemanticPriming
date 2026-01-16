@@ -1,0 +1,36 @@
+2026-01-11 17:57:43,863 INFO    MainThread:27740 [wandb_setup.py:_flush():80] Current SDK version is 0.23.1
+2026-01-11 17:57:43,864 INFO    MainThread:27740 [wandb_setup.py:_flush():80] Configure stats pid to 27740
+2026-01-11 17:57:43,864 INFO    MainThread:27740 [wandb_setup.py:_flush():80] Loading settings from C:\Users\timoy\.config\wandb\settings
+2026-01-11 17:57:43,864 INFO    MainThread:27740 [wandb_setup.py:_flush():80] Loading settings from C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\wandb\settings
+2026-01-11 17:57:43,864 INFO    MainThread:27740 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2026-01-11 17:57:43,864 INFO    MainThread:27740 [wandb_init.py:setup_run_log_directory():714] Logging user logs to C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\wandb\run-20260111_175743-1lqnfhn5\logs\debug.log
+2026-01-11 17:57:43,868 INFO    MainThread:27740 [wandb_init.py:setup_run_log_directory():715] Logging internal logs to C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\wandb\run-20260111_175743-1lqnfhn5\logs\debug-internal.log
+2026-01-11 17:57:43,868 INFO    MainThread:27740 [wandb_init.py:init():841] calling init triggers
+2026-01-11 17:57:43,868 INFO    MainThread:27740 [wandb_init.py:init():846] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2026-01-11 17:57:43,868 INFO    MainThread:27740 [wandb_init.py:init():889] starting backend
+2026-01-11 17:57:46,185 INFO    MainThread:27740 [wandb_init.py:init():892] sending inform_init request
+2026-01-11 17:57:46,284 INFO    MainThread:27740 [wandb_init.py:init():900] backend started and connected
+2026-01-11 17:57:46,287 INFO    MainThread:27740 [wandb_init.py:init():970] updated telemetry
+2026-01-11 17:57:46,291 INFO    MainThread:27740 [wandb_init.py:init():994] communicating run to backend with 90.0 second timeout
+2026-01-11 17:57:46,797 INFO    MainThread:27740 [wandb_init.py:init():1041] starting run threads in backend
+2026-01-11 17:57:46,886 INFO    MainThread:27740 [wandb_run.py:_console_start():2521] atexit reg
+2026-01-11 17:57:46,887 INFO    MainThread:27740 [wandb_run.py:_redirect():2369] redirect: wrap_raw
+2026-01-11 17:57:46,887 INFO    MainThread:27740 [wandb_run.py:_redirect():2438] Wrapping output streams.
+2026-01-11 17:57:46,887 INFO    MainThread:27740 [wandb_run.py:_redirect():2461] Redirects installed.
+2026-01-11 17:57:46,890 INFO    MainThread:27740 [wandb_init.py:init():1081] run started, returning control to user process
+2026-01-11 17:57:53,660 INFO    wandb-AsyncioManager-main:27740 [service_client.py:_forward_responses():80] Reached EOF.
+2026-01-11 17:57:53,660 INFO    wandb-AsyncioManager-main:27740 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.
+2026-01-11 17:57:54,376 ERROR   wandb-AsyncioManager-main:27740 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\.venv\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "C:\Users\timoy\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\timoy\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost

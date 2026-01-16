@@ -1,0 +1,48 @@
+_wandb:
+    value:
+        cli_version: 0.23.1
+        e:
+            aj1uahr8ateablobyidx1ry0ckr9os7f:
+                args:
+                    - data/all naming subjects.xlsx
+                codePath: try_to_train.py
+                codePathLocal: try_to_train.py
+                cpu_count: 10
+                cpu_count_logical: 12
+                disk:
+                    /:
+                        total: "486011826176"
+                        used: "318613008384"
+                email: tiyliu@ucdavis.edu
+                executable: C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\.venv\Scripts\python.exe
+                host: Timo-works
+                memory:
+                    total: "16849293312"
+                os: Windows-11-10.0.26100-SP0
+                program: C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming\try_to_train.py
+                python: CPython 3.14.2
+                root: C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming
+                startedAt: "2026-01-12T01:00:19.644862Z"
+                writerId: aj1uahr8ateablobyidx1ry0ckr9os7f
+        m: []
+        python_version: 3.14.2
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 49
+                - 53
+            "2":
+                - 1
+                - 5
+                - 11
+                - 49
+                - 53
+            "4": 3.14.2
+            "5": 0.23.1
+            "6": 4.57.3
+            "8":
+                - 3
+            "12": 0.23.1
+            "13": windows-amd64

@@ -1,0 +1,9 @@
+Epoch (1/10) | Train MSE: 1.019996
+Epoch (1/10) | Val MSE: 1.157177
+Epoch (2/10) | Train MSE: 1.017440
+Epoch (2/10) | Val MSE: 1.159336
+Epoch (3/10) | Train MSE: 1.013276
+Epoch (3/10) | Val MSE: 1.161552
+Epoch (4/10) | Train MSE: 0.963860
+Epoch (4/10) | Val MSE: 1.424024
+Early stopping triggered.
