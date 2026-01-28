@@ -2,3 +2,6 @@
 *.npz
 *.xlsx
 .env
+*.csv
+*.xls
+__pycache__

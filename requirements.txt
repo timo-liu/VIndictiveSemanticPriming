@@ -6,3 +6,7 @@ matplotlib
 openpyxl
 scipy
 wandb
+xlrd
+statsmodels
+seaborn
+tqdm

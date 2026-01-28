@@ -1,0 +1,27 @@
+\begin{table}[ht]
+\centering
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lccccccc}
+\toprule
+Component & Aunsiels/ChildBERT & FacebookAI/xlm-roberta-base & albert-base-v2 & bert-base-uncased & distilbert-base-uncased & microsoft/mpnet-base & roberta-base \\
+\midrule
+word\_embeddings & -0.211 & 0.632 & 0.000 & 0.632 & 0.447 & 0.000 & 0.632 \\
+encoder\_layer\_1 & 0.800 & -0.211 &  & -0.211 & -0.211 & 0.211 & -0.447 \\
+encoder\_layer\_2 & 0.632 & 0.632 &  & -0.447 & -0.447 & 0.447 & -0.211 \\
+encoder\_layer\_3 & 0.447 & 0.211 &  & -0.447 & -0.447 & -0.447 & -0.447 \\
+encoder\_layer\_4 & 0.447 & 0.211 &  & -0.447 & -0.447 & -0.447 & -0.447 \\
+encoder\_layer\_5 & -0.447 & 0.447 &  & -0.447 & -0.447 & -0.211 & -0.400 \\
+encoder\_layer\_6 & -0.447 & 0.447 &  & -0.447 & -0.211 & 0.000 & -0.632 \\
+encoder\_layer\_7 & -0.447 & 0.632 &  & -0.447 &  & 0.000 & -0.211 \\
+encoder\_layer\_8 & -0.447 & 0.447 &  & -0.211 &  & -0.447 & -0.447 \\
+encoder\_layer\_9 & -0.447 & 0.211 &  & -0.211 &  & -0.447 & -0.211 \\
+encoder\_layer\_10 & 0.447 & 0.447 &  & -0.211 &  & -0.211 & -0.211 \\
+encoder\_layer\_11 & 0.632 & 0.447 &  & -0.447 &  & 0.400 & -0.447 \\
+encoder\_layer\_12 & 0.447 & 0.632 &  & -0.211 &  & 0.000 & -0.447 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\caption{Spearman $\rho$ between cosine similarity and RT (LDT, relation superordinate, ISI=1050 ms). $^*$ $p<.01$, $^\dagger$ $.01\leq p \leq .05$.}
+\label{tab:ldt_relsuperordinate_isi1050}
+\end{table}

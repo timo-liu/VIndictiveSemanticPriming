@@ -1,0 +1,27 @@
+\begin{table}[ht]
+\centering
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lccccccc}
+\toprule
+Component & Aunsiels/ChildBERT & FacebookAI/xlm-roberta-base & albert-base-v2 & bert-base-uncased & distilbert-base-uncased & microsoft/mpnet-base & roberta-base \\
+\midrule
+word\_embeddings & 0.135 & 0.117 & 0.119 & 0.069 & 0.043 & 0.039 & 0.163 \\
+encoder\_layer\_1 & -0.081 & -0.039 &  & 0.124 & 0.121 & -0.127 & -0.052 \\
+encoder\_layer\_2 & -0.068 & 0.033 &  & 0.056 & 0.126 & -0.119 & -0.036 \\
+encoder\_layer\_3 & -0.063 & 0.019 &  & 0.031 & 0.115 & -0.113 & 0.061 \\
+encoder\_layer\_4 & -0.071 & 0.005 &  & 0.036 & 0.141 & -0.103 & 0.110 \\
+encoder\_layer\_5 & -0.070 & -0.005 &  & 0.124 & 0.044 & -0.052 & 0.098 \\
+encoder\_layer\_6 & -0.046 & -0.015 &  & 0.081 & -0.039 & -0.057 & 0.144 \\
+encoder\_layer\_7 & -0.043 & -0.012 &  & 0.068 &  & -0.070 & 0.095 \\
+encoder\_layer\_8 & -0.043 & -0.046 &  & 0.068 &  & -0.083 & 0.109 \\
+encoder\_layer\_9 & -0.027 & -0.031 &  & 0.035 &  & -0.036 & 0.083 \\
+encoder\_layer\_10 & -0.030 & -0.087 &  & 0.001 &  & -0.109 & 0.071 \\
+encoder\_layer\_11 & -0.031 & -0.061 &  & -0.051 &  & 0.091 & 0.063 \\
+encoder\_layer\_12 & -0.025 & -0.107 &  & -0.057 &  & 0.014 & 0.052 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\caption{Spearman $\rho$ between cosine similarity and RT (NAM, relation unclassifed, ISI=1050 ms). $^*$ $p<.01$, $^\dagger$ $.01\leq p \leq .05$.}
+\label{tab:nam_relunclassifed_isi1050}
+\end{table}

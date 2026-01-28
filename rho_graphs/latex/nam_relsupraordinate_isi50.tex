@@ -1,0 +1,27 @@
+\begin{table}[ht]
+\centering
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lccccccc}
+\toprule
+Component & Aunsiels/ChildBERT & FacebookAI/xlm-roberta-base & albert-base-v2 & bert-base-uncased & distilbert-base-uncased & microsoft/mpnet-base & roberta-base \\
+\midrule
+word\_embeddings & -0.082 & 0.157$^{\dagger}$ & -0.020 & 0.143$^{\dagger}$ & 0.108 & -0.023 & 0.002 \\
+encoder\_layer\_1 & -0.267$^{*}$ & -0.334$^{*}$ &  & -0.085 & -0.090 & -0.093 & -0.192$^{*}$ \\
+encoder\_layer\_2 & -0.260$^{*}$ & -0.174$^{\dagger}$ &  & -0.104 & -0.129 & -0.104 & -0.193$^{*}$ \\
+encoder\_layer\_3 & -0.223$^{*}$ & -0.184$^{*}$ &  & -0.126 & -0.131 & -0.104 & -0.173$^{\dagger}$ \\
+encoder\_layer\_4 & -0.253$^{*}$ & -0.233$^{*}$ &  & -0.119 & -0.060 & -0.113 & -0.129 \\
+encoder\_layer\_5 & -0.273$^{*}$ & -0.249$^{*}$ &  & -0.077 & -0.017 & -0.119 & -0.110 \\
+encoder\_layer\_6 & -0.290$^{*}$ & -0.258$^{*}$ &  & -0.058 & -0.064 & -0.145$^{\dagger}$ & -0.101 \\
+encoder\_layer\_7 & -0.294$^{*}$ & -0.236$^{*}$ &  & -0.047 &  & -0.143$^{\dagger}$ & -0.108 \\
+encoder\_layer\_8 & -0.304$^{*}$ & -0.235$^{*}$ &  & -0.040 &  & -0.223$^{*}$ & -0.095 \\
+encoder\_layer\_9 & -0.307$^{*}$ & -0.285$^{*}$ &  & -0.046 &  & -0.106 & -0.107 \\
+encoder\_layer\_10 & -0.287$^{*}$ & -0.276$^{*}$ &  & -0.067 &  & -0.169$^{\dagger}$ & -0.140$^{\dagger}$ \\
+encoder\_layer\_11 & -0.245$^{*}$ & -0.259$^{*}$ &  & -0.046 &  & -0.139$^{\dagger}$ & -0.160$^{\dagger}$ \\
+encoder\_layer\_12 & -0.234$^{*}$ & -0.273$^{*}$ &  & -0.029 &  & -0.091 & -0.188$^{*}$ \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\caption{Spearman $\rho$ between cosine similarity and RT (NAM, relation supraordinate, ISI=50 ms). $^*$ $p<.01$, $^\dagger$ $.01\leq p \leq .05$.}
+\label{tab:nam_relsupraordinate_isi50}
+\end{table}

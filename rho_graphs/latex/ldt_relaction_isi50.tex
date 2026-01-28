@@ -1,0 +1,27 @@
+\begin{table}[ht]
+\centering
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lccccccc}
+\toprule
+Component & Aunsiels/ChildBERT & FacebookAI/xlm-roberta-base & albert-base-v2 & bert-base-uncased & distilbert-base-uncased & microsoft/mpnet-base & roberta-base \\
+\midrule
+word\_embeddings & 0.004 & 0.152 & 0.010 & 0.265 & 0.243 & 0.169 & 0.192 \\
+encoder\_layer\_1 & -0.244 & -0.112 &  & 0.076 & 0.071 & -0.016 & -0.170 \\
+encoder\_layer\_2 & -0.196 & -0.108 &  & 0.062 & -0.013 & -0.017 & -0.186 \\
+encoder\_layer\_3 & -0.211 & -0.160 &  & 0.067 & -0.049 & -0.017 & -0.066 \\
+encoder\_layer\_4 & -0.206 & -0.134 &  & 0.093 & 0.086 & 0.016 & -0.030 \\
+encoder\_layer\_5 & -0.209 & -0.123 &  & 0.064 & 0.100 & 0.009 & -0.065 \\
+encoder\_layer\_6 & -0.193 & -0.101 &  & 0.045 & 0.090 & -0.034 & -0.029 \\
+encoder\_layer\_7 & -0.189 & -0.104 &  & 0.082 &  & -0.038 & -0.033 \\
+encoder\_layer\_8 & -0.190 & -0.129 &  & 0.114 &  & -0.027 & -0.052 \\
+encoder\_layer\_9 & -0.200 & -0.164 &  & 0.135 &  & -0.124 & -0.057 \\
+encoder\_layer\_10 & -0.188 & -0.117 &  & 0.128 &  & -0.015 & -0.046 \\
+encoder\_layer\_11 & -0.157 & -0.138 &  & 0.154 &  & 0.005 & -0.035 \\
+encoder\_layer\_12 & -0.155 & -0.120 &  & 0.163 &  & -0.081 & -0.012 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\caption{Spearman $\rho$ between cosine similarity and RT (LDT, relation action, ISI=50 ms). $^*$ $p<.01$, $^\dagger$ $.01\leq p \leq .05$.}
+\label{tab:ldt_relaction_isi50}
+\end{table}

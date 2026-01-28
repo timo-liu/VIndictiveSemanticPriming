@@ -3,70 +3,45 @@ import pandas as pd
 import os
 import numpy as np
 
-def parse_data(path : str,
-			   extract_dict : Optional[Dict[str, str]] = None):
-	"""
-	Load a CSV or Excel file and extract selected columns into a new DataFrame.
+def parse_data(
+    path: str,
+    extract_dict: Optional[Dict[str, str]] = None,
+    sheet_name: Optional[str] = None
+):
 
-	The function reads a dataset from the given file path and constructs a new
-	pandas DataFrame containing columns specified in `extract_dict`. Each key
-	in `extract_dict` becomes a column name in the returned DataFrame, while
-	the corresponding value specifies the column name to extract from the
-	source DataFrame.
+    if extract_dict is None:
+        extract_dict = {
+            "prime": "prime",
+            "target": "target",
+            "primecondition": "primecond",
+            "RT": "target.RT",
+            "accuracy": "target.ACC",
+            "isi": "isi"
+        }
 
-	If a specified source column is not found, a warning message is printed
-	and the column is skipped.
+    # ---------- Load data ----------
+    if path.endswith((".xlsx", ".xls")):
+        if sheet_name is None:
+            df = pd.read_excel(path, sheet_name=0)
+        else:
+            df = pd.read_excel(path, sheet_name=sheet_name)
 
-	Parameters
-	----------
-	path : str
-		Path to the input data file. Supported formats are `.csv` and `.xlsx`.
-	extract_dict : Dict[str, str], optional
-		A mapping from output column names to source column names in the input
-		DataFrame. Defaults to extracting prime, target, primecondition, RT,
-		and accuracy-related columns.
+    elif path.endswith(".csv"):
+        df = pd.read_csv(path)
 
-	Returns
-	-------
-	pandas.DataFrame
-		A DataFrame containing the extracted columns with renamed headers.
+    else:
+        raise ValueError(f"Unsupported file type: {path}")
 
-	Raises
-	------
-	ValueError
-		If the file extension is not `.csv` or `.xlsx`.
+    # ---------- Extract columns ----------
+    rdf = pd.DataFrame()
+    for out_col, src_col in extract_dict.items():
+        if src_col in df.columns:
+            rdf[out_col] = df[src_col]
+        else:
+            print(f"Warning: '{src_col}' not found in {path}")
 
-	Examples
-	--------
-	>>> df = parse_date("experiment_data.csv")
-	>>> df.columns
-	Index(['prime', 'target', 'primecondition', 'RT', 'accuracy'], dtype='object')
-	"""
+    return rdf
 
-	if extract_dict is None:
-		extract_dict = {
-				   "prime" : "prime",
-				   "target" : "target",
-				   "primecondition" : "primecond",
-				   "RT" : "target.RT",
-				   "accuracy" : "target.ACC",
-					"isi" : "isi"
-			   }
-
-	if path.endswith('.xlsx'):
-		df = pd.read_excel(path)
-	elif path.endswith('.csv'):
-		df = pd.read_csv(path)
-
-	# construct the return df
-	rdf = pd.DataFrame()
-	for title, target_column in extract_dict.items():
-		try:
-			rdf[title] = df[target_column]
-		except KeyError:
-			print(f"{target_column} not found in {path}")
-
-	return rdf
 
 def load_embedding_cache(cache_path):
 	if os.path.exists(cache_path):
@@ -103,3 +78,6 @@ def get_or_compute_encoder_layers(word, gg, cache, component, *, normalize=False
 
 	cache[word] = embs
 	return embs
+
+def is_blank(x):
+	return pd.isna(x) or str(x).strip() == ""
