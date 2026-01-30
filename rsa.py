@@ -8,7 +8,7 @@ from tqdm import tqdm
 import csv
 
 
-TARGET_MODEL = ""
+TARGET_MODEL = "albert"
 TARGET_COMPONENT_PREFIX = ""
 
 

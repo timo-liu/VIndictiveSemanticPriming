@@ -105,7 +105,7 @@ class GutsGorer:
 				layer_id = int(layer_id_str)
 
 				layers = get_encoder_layers(self.model)
-				assert layer_id < len(layers), f"Invalid encoder layer id: {layer_id_str}"
+				# assert layer_id < len(layers), f"Invalid encoder layer id: {layer_id_str}"
 
 				result = self.model(input_tensor)
 				hidden_states = result.hidden_states

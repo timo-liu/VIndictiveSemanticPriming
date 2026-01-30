@@ -8,13 +8,13 @@ $datasets = @(
 )
 
 $models = @(
-    "bert-base-uncased",
-    "roberta-base",
-    "distilbert-base-uncased",
-    "microsoft/mpnet-base",
-    "Aunsiels/ChildBERT",
-    "albert-base-v2",
-    "FacebookAI/xlm-roberta-base"
+    #"bert-base-uncased",
+    #"roberta-base",
+    #"distilbert-base-uncased",
+    #"microsoft/mpnet-base",
+    #"Aunsiels/ChildBERT",
+    "albert-base-v2"
+    #"FacebookAI/xlm-roberta-base"
 )
 
 # Components to extract
