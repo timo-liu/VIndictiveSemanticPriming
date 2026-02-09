@@ -16,24 +16,6 @@ from tqdm.auto import tqdm
 
 import torch
 
-
-def normalize_vector(vec, p=2, dim=0, eps=1e-12):
-	"""
-	Normalize a vector (or tensor) to unit length along the specified dimension.
-
-	Args:
-		vec (torch.Tensor): Input vector or tensor.
-		p (int): Norm degree (default 2 for L2 norm).
-		dim (int): Dimension along which to normalize.
-		eps (float): Small epsilon to avoid division by zero.
-
-	Returns:
-		torch.Tensor: Normalized tensor.
-	"""
-	norm = torch.norm(vec, p=p, dim=dim, keepdim=True).clamp(min=eps)
-	return vec / norm
-
-
 def plot_heatmaps(
 	heat_maps,
 	save_dir,
@@ -72,58 +54,6 @@ def plot_heatmaps(
 # ---------------------------------------------------------------------
 # Embedding cache
 # ---------------------------------------------------------------------
-
-def normalize_token(tok):
-	if not isinstance(tok, str) or not tok.strip():
-		return None
-	return tok.strip()  # optionally .lower()
-
-
-def load_or_build_embedding_cache(tokens, *, model, component, embedding_dir):
-	os.makedirs(embedding_dir, exist_ok=True)
-	cache_path = os.path.join(
-		embedding_dir,
-		f"{model.replace('/', '_')}__{component}.npz"
-	)
-
-	# Load existing cache
-	if os.path.exists(cache_path):
-		cache = dict(np.load(cache_path, allow_pickle=True))
-	else:
-		cache = {}
-
-	# Normalize and keep only valid tokens
-	valid_tokens = [t for t in tokens if normalize_token(t) is not None]
-
-	# Compute embeddings for missing tokens
-	missing = [t for t in valid_tokens if t not in cache]
-	if missing:
-		gg = GutsGorer(model)
-		print(f"Computing embeddings for {len(missing)} missing tokens...")
-
-		for tok in tqdm(missing, desc="Computing embeddings"):
-			try:
-				if component == "word_embeddings":
-					vec = gg.compute_embedding(tok, component="word_embeddings")
-				elif component.startswith("encoder_layer_"):
-					layer = int(component.split("_")[-1])
-					layers = get_or_compute_encoder_layers(tok, gg, {}, component)
-					vec = layers[layer]
-				else:
-					raise ValueError(component)
-			except Exception as e:
-				print(f"Warning: could not embed token '{tok}': {e}")
-				continue
-			if isinstance(vec, np.ndarray):
-				vec = torch.from_numpy(vec)
-			cache[tok] = normalize_vector(vec)
-
-		# Save updated cache immediately
-		np.savez_compressed(cache_path, **cache)
-		print(f"Cache updated: {cache_path}")
-
-	return cache
-
 
 # ---------------------------------------------------------------------
 # RT-based dissimilarity (bootstrap-compatible)

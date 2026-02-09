@@ -2,3 +2,4 @@ compute embeddings with consolidateheatmaps.py # ./heatmaps.ps1
 compute rsa from the heatmaps (dissimilarity matrices) # rsa.py
 then do rsa analysis # rsa_rho_analysis.py
 further analysis with layer ranking # dissect.py
+Do silhouette scores over embeddings difference k-means # k-shadow

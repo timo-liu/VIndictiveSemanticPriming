@@ -6,32 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2d968c9d-637b-456c-b0b0-6e91dfb57bdb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dissect.py" beforeDir="false" afterPath="$PROJECT_DIR$/dissect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_1050_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_1050_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_1050_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_1050_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_1050_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_1050_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_1050_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_1050_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_1050_action.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_1050_action.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_action.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_action.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_antonym.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_antonym.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_associated property.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_associated property.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_bpa.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_bpa.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_category.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_category.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_fpa.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_fpa.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_functional property.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_functional property.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_instrument.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_instrument.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_perceptual property.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_perceptual property.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_script.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_script.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_superordinate.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_superordinate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_supraordinate.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_supraordinate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_synonym.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_synonym.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_unclassified.png" beforeDir="false" afterPath="$PROJECT_DIR$/layer_rankings/top5_layer_frequency_50_unclassified.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Definitions/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Definitions/Utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consolidatedheatmap.py" beforeDir="false" afterPath="$PROJECT_DIR$/consolidatedheatmap.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pipeline_description.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline_description.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rsa_rho_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/rsa_rho_analysis.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
