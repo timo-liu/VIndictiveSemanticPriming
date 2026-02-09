@@ -5,21 +5,38 @@ from collections import defaultdict
 import numpy as np
 import scipy.stats as st
 import os
+import pickle
 
 if __name__ == '__main__':
+    def leaf():
+        return {"rhos": [], "ps": []}
+
+
+    def level3():
+        return defaultdict(leaf)
+
+
+    def level2():
+        return defaultdict(level3)
+
+
+    def level1():
+        return defaultdict(level2)
+    # endregion pickle
     """
     Open up the rsv and compute means
     """
     argparser = argparse.ArgumentParser()
     argparser.add_argument("--data", help="input csv file", required=False, default="rsa_meta.csv")
     argparser.add_argument("--graphs", help="graph dir", required=False, default="rsa_graphs")
+    argparser.add_argument("--pickle", help="pickle to output", action="store_true")
     args = argparser.parse_args()
 
     os.makedirs(args.graphs, exist_ok=True)
 
     # columns = task | condition | component | model | rt_boot | emb_boot | rho | p
 
-    adder = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(list))))
+    adder = defaultdict(level1)
     # task -> condition -> model -> component
 
     with open(args.data) as rsa:
@@ -32,13 +49,18 @@ if __name__ == '__main__':
             rt_boot = row["rt_boot"]
             emb_boot = row["emb_boot"]
             rho = row["rho"]
-            adder[task][condition][model][component].append(float(rho))
+            adder[task][condition][model][component]["rhos"].append(float(rho))
+
+    if args.pickle:
+        with open("rsa_rho_dump.pkl", "wb") as w:
+            pickle.dump(adder, w)
 
     for task, condition_data in adder.items():
         for condition, model_data in condition_data.items():
             for model, component_data in model_data.items():
-                ys = [1 - np.mean(rho) for rho in component_data.values()]
-                serrs = [st.sem(rho) for rho in component_data.values()]
+                ys = [1 - np.mean(rho["rhos"]) for rho in component_data.values()]
+                serrs = [st.sem([1 - r for r in rho["rhos"]]) for rho in component_data.values()]
+                # try doing analysis with 1-r as std dev
                 labels = list(component_data.keys())
                 ys, yerrs, labels = zip(*sorted(zip(ys, serrs, labels), key = lambda x: x[0], reverse=False))
                 plt.bar(labels, ys, yerr=yerrs)
