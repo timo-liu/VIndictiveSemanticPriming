@@ -9,6 +9,224 @@ import os
 
 top_k = 5
 
+def latex_escape(s: str) -> str:
+	return s.replace("_", "\\_")
+
+def split_condition(cond: str):
+	isi, name = cond.split("_", 1)
+	return isi, name
+
+def table_layer_tex(
+		tlt: Dict[str, Dict[str, Counter]],
+		all_layers: List[str],
+		layer_sort_key: Callable[[str], Any],
+		tex_path: str,
+		collapse_tasks: bool = False,
+		collapse_isis: bool = False
+):
+	layers = sorted(all_layers, key=layer_sort_key)
+	tasks = sorted(tlt.keys())
+
+	# collect universe of (isi, condition)
+	isi_cond_pairs = set()
+	for layer_counters in tlt.values():
+		for counter in layer_counters.values():
+			for c in counter:
+				if '.' not in c:
+					isi_cond_pairs.add(split_condition(c))
+
+	with open(tex_path, "w") as f:
+
+		# --------------------------------------------------
+		# CASE 1: no collapse → task × isi × condition
+		# --------------------------------------------------
+		if not collapse_tasks and not collapse_isis:
+			for task in tasks:
+				for isi, cond in sorted(isi_cond_pairs):
+					task_tex = latex_escape(task)
+					isi_tex = latex_escape(isi)
+					cond_tex = latex_escape(cond)
+
+					f.write(f"% ---- {task_tex} | ISI {isi_tex} | {cond_tex} ----\n")
+					f.write("\\begin{table}[H]\n\\centering\n")
+					f.write(
+						f"\\caption{{Layer counts — Task: {task_tex}, ISI: {isi_tex}, Condition: {cond_tex}}}\n"
+					)
+
+					f.write("\\begin{tabular}{lc}\n\\hline\n")
+					f.write("Layer & Count \\\\\n\\hline\n")
+
+					for layer in layers:
+						key = f"{isi}_{cond}"
+						count = tlt[task].get(layer, Counter()).get(key, 0)
+						f.write(f"{latex_escape(layer)} & {count} \\\\\n")
+
+					f.write("\\hline\n\\end{tabular}\n\\end{table}\n\n")
+
+		# --------------------------------------------------
+		# CASE 2: collapse tasks → isi × condition
+		# --------------------------------------------------
+		elif collapse_tasks and not collapse_isis:
+			for isi, cond in sorted(isi_cond_pairs):
+				isi_tex = latex_escape(isi)
+				cond_tex = latex_escape(cond)
+
+				f.write(f"% ---- ISI {isi_tex} | {cond_tex} ----\n")
+				f.write("\\begin{table}[H]\n\\centering\n")
+				f.write(
+					f"\\caption{{Layer counts collapsed across tasks — ISI: {isi_tex}, Condition: {cond_tex}}}\n"
+				)
+
+				f.write("\\begin{tabular}{lc}\n\\hline\n")
+				f.write("Layer & Count \\\\\n\\hline\n")
+
+				for layer in layers:
+					key = f"{isi}_{cond}"
+					count = sum(
+						tlt[task].get(layer, Counter()).get(key, 0)
+						for task in tasks
+					)
+					f.write(f"{latex_escape(layer)} & {count} \\\\\n")
+
+				f.write("\\hline\n\\end{tabular}\n\\end{table}\n\n")
+
+		# --------------------------------------------------
+		# CASE 3: collapse ISIs → task × condition
+		# --------------------------------------------------
+		elif collapse_isis and not collapse_tasks:
+			conditions = sorted({cond for _, cond in isi_cond_pairs})
+
+			for task in tasks:
+				task_tex = latex_escape(task)
+
+				for cond in conditions:
+					cond_tex = latex_escape(cond)
+
+					f.write(f"% ---- {task_tex} | {cond_tex} ----\n")
+					f.write("\\begin{table}[H]\n\\centering\n")
+					f.write(
+						f"\\caption{{Layer counts collapsed across ISIs — Task: {task_tex}, Condition: {cond_tex}}}\n"
+					)
+
+					f.write("\\begin{tabular}{lc}\n\\hline\n")
+					f.write("Layer & Count \\\\\n\\hline\n")
+
+					for layer in layers:
+						count = sum(
+							tlt[task].get(layer, Counter()).get(f"{isi}_{cond}", 0)
+							for isi, _ in isi_cond_pairs
+							if _ == cond
+						)
+						f.write(f"{latex_escape(layer)} & {count} \\\\\n")
+
+					f.write("\\hline\n\\end{tabular}\n\\end{table}\n\n")
+
+		# --------------------------------------------------
+		# CASE 4: collapse both → condition only
+		# --------------------------------------------------
+		else:
+			conditions = sorted({cond for _, cond in isi_cond_pairs})
+
+			for cond in conditions:
+				cond_tex = latex_escape(cond)
+
+				f.write(f"% ---- {cond_tex} (fully collapsed) ----\n")
+				f.write("\\begin{table}[H]\n\\centering\n")
+				f.write(
+					f"\\caption{{Layer counts collapsed across tasks and ISIs — Condition: {cond_tex}}}\n"
+				)
+
+				f.write("\\begin{tabular}{lc}\n\\hline\n")
+				f.write("Layer & Count \\\\\n\\hline\n")
+
+				for layer in layers:
+					count = sum(
+						tlt[task].get(layer, Counter()).get(f"{isi}_{cond}", 0)
+						for task in tasks
+						for isi, _ in isi_cond_pairs
+						if _ == cond
+					)
+					f.write(f"{latex_escape(layer)} & {count} \\\\\n")
+
+				f.write("\\hline\n\\end{tabular}\n\\end{table}\n\n")
+
+
+def most_salient_categories(
+    tlt: Dict[str, Dict[str, Counter]],
+    all_layers: List[str],
+    layer_sort_key: Callable[[str], Any],
+    tex_path: str,
+    collapse_tasks: bool = False,
+    collapse_isis: bool = False,
+    k: int = 3,
+):
+    layers = sorted(all_layers, key=layer_sort_key)
+    tasks = sorted(tlt.keys())
+
+    # collect universe of (isi, condition)
+    isi_cond_pairs = set()
+    for layer_counters in tlt.values():
+        for counter in layer_counters.values():
+            for c in counter:
+                if "." not in c:
+                    isi_cond_pairs.add(split_condition(c))
+
+    # --------------------------------------------------
+    # build layer → Counter(category)
+    # --------------------------------------------------
+    layer_category_counts = defaultdict(Counter)
+
+    for layer in layers:
+        for task in tasks:
+            counter = tlt[task].get(layer, Counter())
+
+            for isi, cond in isi_cond_pairs:
+                key = f"{isi}_{cond}"
+                val = counter.get(key, 0)
+                if val == 0:
+                    continue
+
+                # collapse ISIs
+                if collapse_isis:
+                    cat = cond
+                else:
+                    cat = key
+
+                # collapse tasks handled by summing anyway
+                layer_category_counts[layer][cat] += val
+
+    # --------------------------------------------------
+    # write single LaTeX table
+    # --------------------------------------------------
+    with open(tex_path, "w") as f:
+        f.write("\\begin{table}[H]\n\\centering\n")
+        f.write(
+            f"\\caption{{Top-{k} most salient categories per layer"
+            + (" (tasks collapsed)" if collapse_tasks else "")
+            + (" (ISIs collapsed)" if collapse_isis else "")
+            + "}}\n"
+        )
+
+        col_spec = "l" + "c" * k
+        f.write(f"\\begin{{tabular}}{{{col_spec}}}\n\\hline\n")
+
+        header = ["Layer"] + [f"Category {i+1}" for i in range(k)]
+        f.write(" & ".join(header) + " \\\\\n\\hline\n")
+
+        for layer in layers:
+            topk = layer_category_counts[layer].most_common(k)
+            cats = [latex_escape(cat) for cat, _ in topk]
+
+            # pad if fewer than k
+            while len(cats) < k:
+                cats.append("")
+
+            row = [latex_escape(layer)] + cats
+            f.write(" & ".join(row) + " \\\\\n")
+
+        f.write("\\hline\n\\end{tabular}\n\\end{table}\n")
+
+
 def layer_sort_key(layer):
 	if layer == "word_embeddings":
 		return -1
@@ -37,70 +255,12 @@ if __name__ == "__main__":
 
 	from typing import Dict, List, Any, Callable
 
-
-	def table_layer_task_to_tex(
-			tlt: Dict[str, Dict[str, Counter]],
-			all_layers: List[str],
-			layer_sort_key: Callable[[str], Any],
-			tex_path: str
-	):
-		"""
-		Generate a LaTeX table for each task and write to a .tex file.
-
-		Parameters
-		----------
-		tlt : dict
-			Mapping: task -> { layer -> Counter(condition -> count) }
-		all_layers : list
-			List of layer names.
-		layer_sort_key : callable
-			Sorting key for layers.
-		tex_path : str
-			Output .tex file path.
-		"""
-
-		layers = sorted(all_layers, key=layer_sort_key)
-
-		with open(tex_path, "w") as f:
-			for task, condition_counters in tlt.items():
-
-				# Collect all conditions across all layers for this task
-				all_conditions = set()
-				for counter in condition_counters.values():
-					all_conditions.update(counter.keys())
-				all_conditions = sorted(all_conditions)
-
-				# Begin table
-				f.write(f"% ---- Task: {task} ----\n")
-				f.write("\\begin{table}[h!]\n")
-				f.write("\\centering\n")
-				f.write(f"\\caption{{Results for task: {task}}}\n")
-
-				# Column format: 1 left column + N centered columns
-				col_format = "l" + "c" * len(all_conditions)
-				f.write(f"\\begin{{tabular}}{{{col_format}}}\n")
-				f.write("\\hline\n")
-
-				# Header row
-				header = ["Layer"] + all_conditions
-				f.write(" & ".join(header) + " \\\\\n")
-				f.write("\\hline\n")
-
-				# Data rows
-				for layer in layers:
-					counter = condition_counters.get(layer, Counter())
-					row = [layer] + [str(counter.get(cond, 0)) for cond in all_conditions]
-					f.write(" & ".join(row) + " \\\\\n")
-
-				f.write("\\hline\n")
-				f.write("\\end{tabular}\n")
-				f.write("\\end{table}\n\n")
-
-
 	arg_parser = argparse.ArgumentParser()
 	arg_parser.add_argument(
 		"-i", "--input", required=False, help="Input file path", default="rsa_acc_whole.pkl"
 	)
+	arg_parser.add_argument("--collapse_tasks", action="store_true")
+	arg_parser.add_argument("--collapse_isis", action="store_true")
 	arg_parser.add_argument(
 		"-o", "--output", required=False, help="Graphs go brrr", default="layer_rankings"
 	)
@@ -194,4 +354,21 @@ if __name__ == "__main__":
 			plt.savefig(save_path, dpi=300)
 			plt.close()
 
-	table_layer_task_to_tex(layer_condition_tracker, all_layers, layer_sort_key, "layer_tex.tex")
+	table_layer_tex(
+		layer_condition_tracker,
+		all_layers,
+		layer_sort_key,
+		"layer_tex.tex",
+		collapse_tasks=args.collapse_tasks,
+		collapse_isis=args.collapse_isis
+	)
+
+	most_salient_categories(
+		layer_condition_tracker,
+		all_layers,
+		layer_sort_key,
+		"most_salient_layers.tex",
+		collapse_tasks=args.collapse_tasks,
+		collapse_isis=args.collapse_isis,
+		k=3,  # top-k salient categories
+	)

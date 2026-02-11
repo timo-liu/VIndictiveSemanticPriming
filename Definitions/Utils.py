@@ -5,6 +5,7 @@ import torch
 import numpy as np
 from Definitions.GutsGorer import GutsGorer
 from tqdm import tqdm
+from typing import List
 
 def parse_data(
     path: str,
@@ -150,3 +151,8 @@ def normalize_token(tok):
 	if not isinstance(tok, str) or not tok.strip():
 		return None
 	return tok.strip()  # optionally .lower()
+
+def to_categorical(list : List):
+	uniques = set(list)
+	unique_dict = {u : i for i, u in enumerate(uniques)}
+	return [unique_dict[u] for u in list]

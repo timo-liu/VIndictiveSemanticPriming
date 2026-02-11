@@ -7,7 +7,8 @@
     <list default="true" id="2d968c9d-637b-456c-b0b0-6e91dfb57bdb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Definitions/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Definitions/Utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consolidatedheatmap.py" beforeDir="false" afterPath="$PROJECT_DIR$/consolidatedheatmap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dissect.py" beforeDir="false" afterPath="$PROJECT_DIR$/dissect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer_tex.tex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pipeline_description.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline_description.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,19 +34,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/timoy/Desktop/VIndictiveSemanticPriming&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.XML&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/timoy/OneDrive/Desktop/VIndictiveSemanticPriming",
+    "settings.editor.selected.configurable": "preferences.sourceCode.XML"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\timoy\OneDrive\Desktop\VIndictiveSemanticPriming" />
       <recent name="C:\Users\timoy\Desktop\VIndictiveSemanticPriming" />
       <recent name="C:\Users\timoy\Desktop\VIndictiveSemanticPriming\data" />
       <recent name="C:\Users\timoy\OneDrive\Desktop\VindictiveSemanticPriming" />
