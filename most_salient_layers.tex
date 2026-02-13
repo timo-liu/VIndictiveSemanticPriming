@@ -1,23 +1,17 @@
 \begin{table}[H]
 \centering
-\caption{Top-3 most salient categories per layer (tasks collapsed) (ISIs collapsed)}}
+\caption{Top-3 most salient categories per layer}}
 \begin{tabular}{lccc}
 \hline
 Layer & Category 1 & Category 2 & Category 3 \\
 \hline
-word\_embeddings & functional property & synonym & unclassified \\
-encoder\_layer\_1 & superordinate & associated property & instrument \\
-encoder\_layer\_2 & superordinate & associated property & action \\
-encoder\_layer\_3 & superordinate & associated property & perceptual property \\
-encoder\_layer\_4 & script & action & fpa \\
-encoder\_layer\_5 & instrument & fpa & action \\
-encoder\_layer\_6 & synonym & functional property & fpa \\
-encoder\_layer\_7 & synonym & unclassified & perceptual property \\
-encoder\_layer\_8 & category & synonym & perceptual property \\
-encoder\_layer\_9 & antonym & functional property & supraordinate \\
-encoder\_layer\_10 & superordinate & associated property & bpa \\
-encoder\_layer\_11 & superordinate & associated property & bpa \\
-encoder\_layer\_12 & perceptual property & category & superordinate \\
+roberta-base & 1050\_antonym & 50\_perceptual property & 50\_category \\
+Aunsiels\_ChildBERT & 1050\_associated property & 1050\_superordinate & 50\_associated property \\
+microsoft\_mpnet-base & 1050\_bpa & 1050\_synonym & 1050\_associated property \\
+bert-base-uncased & 1050\_synonym & 50\_fpa & 50\_script \\
+FacebookAI\_xlm-roberta-base & 1050\_bpa & 1050\_associated property & 1050\_antonym \\
+albert-base-v2 & 1050\_synonym & 1050\_associated property & 1050\_antonym \\
+distilbert-base-uncased & 1050\_synonym & 50\_fpa & 50\_script \\
 \hline
 \end{tabular}
 \end{table}

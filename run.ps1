@@ -3,8 +3,8 @@
 # ===========================
 
 $datasets = @(
-    @{ path = "data/all naming subjects.xlsx"; prefix = "nam" },
-    @{ path = "data/ldt.xlsx";                 prefix = "ldt" }
+    @{ path = "data/naming_compressed.xlsx"; prefix = "nam" },
+    @{ path = "data/ldt_compressed.xlsx";                 prefix = "ldt" }
 )
 
 $models = @(
@@ -49,7 +49,8 @@ foreach ($dataset in $datasets) {
                 "$($dataset.path)" `
                 -c "$component" `
                 -i "$model" `
-                -p "$($dataset.prefix)"
+                -p "$($dataset.prefix)" `
+                --aggregate
         }
     }
 }

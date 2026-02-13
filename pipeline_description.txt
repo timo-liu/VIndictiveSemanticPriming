@@ -1,4 +1,6 @@
+quickfix and format with quickfix.py
 compute embeddings with consolidateheatmaps.py # ./heatmaps.ps1
+plot rhos # rho_analysis.py
 compute rsa from the heatmaps (dissimilarity matrices) # rsa.py
 then do rsa analysis # rsa_rho_analysis.py
 further analysis with layer ranking # dissect.py

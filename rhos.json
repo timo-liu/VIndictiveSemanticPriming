@@ -1,0 +1,262 @@
+{
+  "ldt|FacebookAI/xlm-roberta-base|word_embeddings|aggregated|isi=50.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 50.0,
+    "spearman_rho": 0.11969462089794107,
+    "p_value": 5.324405556685444e-168,
+    "n": 52893
+  },
+  "ldt|FacebookAI/xlm-roberta-base|word_embeddings|aggregated|isi=1050.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 1050.0,
+    "spearman_rho": 0.10582792341850981,
+    "p_value": 3.0154234045739005e-131,
+    "n": 52763
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_1|aggregated|isi=50.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 50.0,
+    "spearman_rho": -0.29246953544244386,
+    "p_value": 0.0,
+    "n": 52893
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_1|aggregated|isi=1050.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 1050.0,
+    "spearman_rho": -0.2735526176811338,
+    "p_value": 0.0,
+    "n": 52763
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_2|aggregated|isi=50.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 50.0,
+    "spearman_rho": -0.1795071844785768,
+    "p_value": 0.0,
+    "n": 52893
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_2|aggregated|isi=1050.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 1050.0,
+    "spearman_rho": -0.17184931092845196,
+    "p_value": 0.0,
+    "n": 52763
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_3|aggregated|isi=50.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 50.0,
+    "spearman_rho": -0.21024438388968342,
+    "p_value": 0.0,
+    "n": 52893
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_3|aggregated|isi=1050.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 1050.0,
+    "spearman_rho": -0.20039010903334536,
+    "p_value": 0.0,
+    "n": 52763
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_4|aggregated|isi=50.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 50.0,
+    "spearman_rho": -0.21535454254026062,
+    "p_value": 0.0,
+    "n": 52893
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_4|aggregated|isi=1050.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 1050.0,
+    "spearman_rho": -0.2018585409657761,
+    "p_value": 0.0,
+    "n": 52763
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_5|aggregated|isi=50.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 50.0,
+    "spearman_rho": -0.22268092954829838,
+    "p_value": 0.0,
+    "n": 52893
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_5|aggregated|isi=1050.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 1050.0,
+    "spearman_rho": -0.20646280398376293,
+    "p_value": 0.0,
+    "n": 52763
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_6|aggregated|isi=50.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 50.0,
+    "spearman_rho": -0.23275707151869965,
+    "p_value": 0.0,
+    "n": 52893
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_6|aggregated|isi=1050.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 1050.0,
+    "spearman_rho": -0.2138583689983382,
+    "p_value": 0.0,
+    "n": 52763
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_7|aggregated|isi=50.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 50.0,
+    "spearman_rho": -0.1764431460571673,
+    "p_value": 0.0,
+    "n": 52893
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_7|aggregated|isi=1050.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 1050.0,
+    "spearman_rho": -0.1625292962428013,
+    "p_value": 4.14425642696846e-309,
+    "n": 52763
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_8|aggregated|isi=50.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 50.0,
+    "spearman_rho": -0.20204858937258427,
+    "p_value": 0.0,
+    "n": 52893
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_8|aggregated|isi=1050.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 1050.0,
+    "spearman_rho": -0.184690218861085,
+    "p_value": 0.0,
+    "n": 52763
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_9|aggregated|isi=50.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 50.0,
+    "spearman_rho": -0.27048670178874534,
+    "p_value": 0.0,
+    "n": 52893
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_9|aggregated|isi=1050.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 1050.0,
+    "spearman_rho": -0.24937341795547932,
+    "p_value": 0.0,
+    "n": 52763
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_10|aggregated|isi=50.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 50.0,
+    "spearman_rho": -0.2644553174622476,
+    "p_value": 0.0,
+    "n": 52893
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_10|aggregated|isi=1050.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 1050.0,
+    "spearman_rho": -0.24527602290896802,
+    "p_value": 0.0,
+    "n": 52763
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_11|aggregated|isi=50.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 50.0,
+    "spearman_rho": -0.2614046716718801,
+    "p_value": 0.0,
+    "n": 52893
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_11|aggregated|isi=1050.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 1050.0,
+    "spearman_rho": -0.24202132334636353,
+    "p_value": 0.0,
+    "n": 52763
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_12|aggregated|isi=50.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 50.0,
+    "spearman_rho": -0.26513563550710706,
+    "p_value": 0.0,
+    "n": 52893
+  },
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_12|aggregated|isi=1050.0": {
+    "dataset": "ldt",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 1050.0,
+    "spearman_rho": -0.24393790441294297,
+    "p_value": 0.0,
+    "n": 52763
+  }
+}

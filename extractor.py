@@ -70,7 +70,7 @@ def compute_or_load_cosines(
     *,
     model="bert-base-uncased",
     component="",
-    embedding_dir="embeddings"
+    embedding_dir="D:/redone_heatmaps"
 ):
     """
     Compute cosine similarities using cached encoder-layer embeddings.
@@ -219,6 +219,80 @@ def plot_relation(
 	)
 	plt.close()
 
+def plot_everything_lmao(
+	df,
+	*,
+	output_prefix="AGGREGATED_cosine_vs_RT",
+	component="",
+	model="bert-base-uncased",
+	graphs="graphs",
+	isi=50,
+	suffix=""
+):
+	if not os.path.exists(graphs):
+		os.makedirs(graphs)
+
+	output_folder = os.path.join(graphs, model.replace("/", "_"))
+	os.makedirs(output_folder, exist_ok=True)
+
+	subset = df[
+		(df["isi"] == isi)
+	]
+
+	if len(subset) < 3:
+		return
+
+	cosines = subset["cosine"].tolist()
+	RTs = subset["RT"].tolist()
+
+	res = spearmanr(cosines, RTs)
+
+	write_rho(
+		RHOS,
+		model=model,
+		component=component,
+		relation="aggregated",
+		isi=isi,
+		dataset=suffix,
+		rho=res.correlation,
+		pvalue=res.pvalue,
+		n=len(cosines)
+	)
+
+	plt.scatter(cosines, RTs, alpha=0.7)
+	plt.xlabel("Cosine similarity")
+	plt.ylabel("Reaction time (RT)")
+	plt.title(f"Aggregated conditions | {component} | isi={isi}")
+	plt.gca().invert_xaxis()
+
+	result = linregress(cosines, RTs)
+	x = np.unique(cosines)
+	plt.plot(x, result.slope * x + result.intercept, color="red")
+
+	plt.text(
+		0.05, 0.95,
+		(
+			f"Linear:\n"
+			f"  slope = {result.slope:.3g}\n"
+			f"  R² = {result.rvalue ** 2:.3g}\n"
+			f"  p = {result.pvalue:.3g}\n\n"
+			f"Spearman:\n"
+			f"  rho = {res.correlation:.3g}\n"
+			f"  p = {res.pvalue:.3g}"
+		),
+		transform=plt.gca().transAxes,
+		verticalalignment="top"
+	)
+
+	plt.tight_layout()
+	plt.savefig(
+		os.path.join(
+			output_folder,
+			f"{output_prefix}_AGGREGATED_{component}_{isi}_{suffix}.png"
+		)
+	)
+	plt.close()
+
 
 # ---------------------------------------------------------------------
 # Main
@@ -233,6 +307,7 @@ if __name__ == '__main__':
 	arg_parser.add_argument('-n', '--n_data', type=int, default=5000)
 	arg_parser.add_argument('-g', '--graphs', default="graphs")
 	arg_parser.add_argument('-p', '--condition', required=True, help="Dataset label")
+	arg_parser.add_argument('-m', '--aggregate', action = "store_true")
 	args = arg_parser.parse_args()
 
 	gg = GutsGorer(args.hf_id)
@@ -253,7 +328,6 @@ if __name__ == '__main__':
 		data,
 		gg,
 		args.save,
-		n=args.n_data,
 		component=args.component,
 		model=args.hf_id
 	)
@@ -262,15 +336,26 @@ if __name__ == '__main__':
 
 	print(f"Found relations: {relations}")
 
-	for rel in relations:
+	if not args.aggregate:
+		for rel in relations:
+			for isi in isis:
+				plot_relation(
+					df_all,
+					rel,
+					component=args.component,
+					model=args.hf_id,
+					graphs=args.graphs,
+					isi=isi,
+					suffix=args.condition
+				)
+				print(f"Saved plot for relation {rel}, isi {isi}")
+	else:
 		for isi in isis:
-			plot_relation(
+			plot_everything_lmao(
 				df_all,
-				rel,
 				component=args.component,
 				model=args.hf_id,
 				graphs=args.graphs,
 				isi=isi,
 				suffix=args.condition
 			)
-			print(f"Saved plot for relation {rel}, isi {isi}")

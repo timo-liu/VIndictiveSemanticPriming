@@ -66,7 +66,7 @@ if __name__ == '__main__':
                 plt.bar(labels, ys, yerr=yerrs)
                 plt.xticks(rotation=45, fontsize=6)
                 plt.xlabel("component")
-                plt.ylabel("rho")
+                plt.ylabel("1 - rho")
                 plt.title(f"Best to Worst Component RSA correlations for task {task}, model {model}, condition {condition}", fontsize=6)
                 plt.tight_layout()
                 graph_name = f"{task}_{condition}_{model}.png"

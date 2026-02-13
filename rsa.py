@@ -8,7 +8,7 @@ from tqdm import tqdm
 import csv
 
 
-TARGET_MODEL = "albert"
+TARGET_MODEL = ""
 TARGET_COMPONENT_PREFIX = ""
 
 
@@ -128,11 +128,10 @@ if __name__ == "__main__":
 	matcher = defaultdict(dict)
 
 	for file in tqdm(os.listdir(args.dir), desc="Scanning heatmap files"):
-		if not file.endswith(".npz"):
+		if not file.endswith(".npz") or not ("ldt" in file or "nam" in file ):
 			continue
 		if TARGET_MODEL not in file:
 			continue
-
 		prefix, suffix = file.rsplit("_", 1)
 		match_type = suffix.replace(".npz", "")
 		matcher[prefix][match_type] = file
