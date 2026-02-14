@@ -1,262 +1,3402 @@
 {
-  "ldt|FacebookAI/xlm-roberta-base|word_embeddings|aggregated|isi=50.0": {
+  "nam|bert-base-uncased|word_embeddings|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": 0.20549214397937948,
+    "p_value": 1.73908355553395e-310,
+    "n": 32887
+  },
+  "nam|bert-base-uncased|word_embeddings|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": 0.18082281187927046,
+    "p_value": 1.3007495006910303e-239,
+    "n": 32871
+  },
+  "nam|bert-base-uncased|encoder_layer_1|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.5370606881280809,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "nam|bert-base-uncased|encoder_layer_1|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.5168935892434151,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "nam|bert-base-uncased|encoder_layer_2|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.5233937325420407,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "nam|bert-base-uncased|encoder_layer_2|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.5013188917215744,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "nam|bert-base-uncased|encoder_layer_3|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.5190958350035855,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "nam|bert-base-uncased|encoder_layer_3|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.49715738282464883,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "nam|bert-base-uncased|encoder_layer_4|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.48908545545829196,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "nam|bert-base-uncased|encoder_layer_4|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.46706720900285126,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "nam|bert-base-uncased|encoder_layer_5|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.31750884474247665,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "nam|bert-base-uncased|encoder_layer_5|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.3003613403253771,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "nam|bert-base-uncased|encoder_layer_6|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.10721454194681075,
+    "p_value": 1.1283281719179534e-84,
+    "n": 32887
+  },
+  "nam|bert-base-uncased|encoder_layer_6|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.09981471880024569,
+    "p_value": 1.5016066102920516e-73,
+    "n": 32871
+  },
+  "nam|bert-base-uncased|encoder_layer_7|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.0676532630744558,
+    "p_value": 1.1264590314965722e-34,
+    "n": 32887
+  },
+  "nam|bert-base-uncased|encoder_layer_7|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.06342291559387629,
+    "p_value": 1.1754014014086665e-30,
+    "n": 32871
+  },
+  "nam|bert-base-uncased|encoder_layer_8|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.03011747766406509,
+    "p_value": 4.68767654922412e-08,
+    "n": 32887
+  },
+  "nam|bert-base-uncased|encoder_layer_8|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.025952808896776463,
+    "p_value": 2.526843957762128e-06,
+    "n": 32871
+  },
+  "nam|bert-base-uncased|encoder_layer_9|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": 0.003932737290547902,
+    "p_value": 0.47574141010183585,
+    "n": 32887
+  },
+  "nam|bert-base-uncased|encoder_layer_9|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": 0.006602802913563713,
+    "p_value": 0.23127555144480033,
+    "n": 32871
+  },
+  "nam|bert-base-uncased|encoder_layer_10|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": 0.024160116534048624,
+    "p_value": 1.1767292442368916e-05,
+    "n": 32887
+  },
+  "nam|bert-base-uncased|encoder_layer_10|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": 0.02679605230126685,
+    "p_value": 1.1803452408663317e-06,
+    "n": 32871
+  },
+  "nam|bert-base-uncased|encoder_layer_11|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": 0.05254147206013921,
+    "p_value": 1.5060925530760367e-21,
+    "n": 32887
+  },
+  "nam|bert-base-uncased|encoder_layer_11|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": 0.054027907675394615,
+    "p_value": 1.101143072204071e-22,
+    "n": 32871
+  },
+  "nam|bert-base-uncased|encoder_layer_12|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": 0.017133127078460354,
+    "p_value": 0.0018889177647825046,
+    "n": 32887
+  },
+  "nam|bert-base-uncased|encoder_layer_12|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": 0.013861403206222476,
+    "p_value": 0.011965924762299119,
+    "n": 32871
+  },
+  "nam|roberta-base|word_embeddings|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": 0.02063752868572411,
+    "p_value": 0.00018196270593243114,
+    "n": 32887
+  },
+  "nam|roberta-base|word_embeddings|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": 0.01032680044487994,
+    "p_value": 0.06116995772621486,
+    "n": 32871
+  },
+  "nam|roberta-base|encoder_layer_1|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.2984779715663777,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "nam|roberta-base|encoder_layer_1|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.2768642252944412,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "nam|roberta-base|encoder_layer_2|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.25967840863237274,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "nam|roberta-base|encoder_layer_2|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.2440419107101186,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "nam|roberta-base|encoder_layer_3|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.2226588316674104,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "nam|roberta-base|encoder_layer_3|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.20917018098594561,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "nam|roberta-base|encoder_layer_4|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.14711759150401296,
+    "p_value": 1.6737484492477773e-158,
+    "n": 32887
+  },
+  "nam|roberta-base|encoder_layer_4|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.13797506635927004,
+    "p_value": 2.0763330954696584e-139,
+    "n": 32871
+  },
+  "nam|roberta-base|encoder_layer_5|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.1122556528724935,
+    "p_value": 1.0857849166638868e-92,
+    "n": 32887
+  },
+  "nam|roberta-base|encoder_layer_5|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.10580831118434181,
+    "p_value": 1.8240071013580888e-82,
+    "n": 32871
+  },
+  "nam|roberta-base|encoder_layer_6|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.08144061256936257,
+    "p_value": 1.6233733813792124e-49,
+    "n": 32887
+  },
+  "nam|roberta-base|encoder_layer_6|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.07807250566833912,
+    "p_value": 1.2912238355362099e-45,
+    "n": 32871
+  },
+  "nam|roberta-base|encoder_layer_7|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.07732433489352034,
+    "p_value": 8.493014653479048e-45,
+    "n": 32887
+  },
+  "nam|roberta-base|encoder_layer_7|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.07278226816452166,
+    "p_value": 7.410624510347259e-40,
+    "n": 32871
+  },
+  "nam|roberta-base|encoder_layer_8|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.0677655764154589,
+    "p_value": 8.747739831679645e-35,
+    "n": 32887
+  },
+  "nam|roberta-base|encoder_layer_8|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.06394077677768686,
+    "p_value": 3.9267063002483347e-31,
+    "n": 32871
+  },
+  "nam|roberta-base|encoder_layer_9|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.0751728040371788,
+    "p_value": 1.985352669339442e-42,
+    "n": 32887
+  },
+  "nam|roberta-base|encoder_layer_9|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.07265315979190817,
+    "p_value": 1.0123913068949616e-39,
+    "n": 32871
+  },
+  "nam|roberta-base|encoder_layer_10|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.10674755648655458,
+    "p_value": 5.971440605906526e-84,
+    "n": 32887
+  },
+  "nam|roberta-base|encoder_layer_10|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.10091435274349053,
+    "p_value": 3.8050853533714443e-75,
+    "n": 32871
+  },
+  "nam|roberta-base|encoder_layer_11|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.16196861113686115,
+    "p_value": 3.977658218999335e-192,
+    "n": 32887
+  },
+  "nam|roberta-base|encoder_layer_11|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.1516325915915258,
+    "p_value": 2.751737356865017e-168,
+    "n": 32871
+  },
+  "nam|roberta-base|encoder_layer_12|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.1762220714570526,
+    "p_value": 1.3369196593844162e-227,
+    "n": 32887
+  },
+  "nam|roberta-base|encoder_layer_12|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "roberta-base",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.16545587637997586,
+    "p_value": 2.0360425852870954e-200,
+    "n": 32871
+  },
+  "nam|distilbert-base-uncased|word_embeddings|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "distilbert-base-uncased",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": 0.19239861549162057,
+    "p_value": 1.0147839705209864e-271,
+    "n": 32887
+  },
+  "nam|distilbert-base-uncased|word_embeddings|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "distilbert-base-uncased",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": 0.1675775931452231,
+    "p_value": 1.306519017154622e-205,
+    "n": 32871
+  },
+  "nam|distilbert-base-uncased|encoder_layer_1|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.48338292465905097,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "nam|distilbert-base-uncased|encoder_layer_1|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.4671173113533035,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "nam|distilbert-base-uncased|encoder_layer_2|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.3909947030000774,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "nam|distilbert-base-uncased|encoder_layer_2|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.38095937968325333,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "nam|distilbert-base-uncased|encoder_layer_3|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.22504782135814555,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "nam|distilbert-base-uncased|encoder_layer_3|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.22027513160794995,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "nam|distilbert-base-uncased|encoder_layer_4|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.07741181939295075,
+    "p_value": 6.781523222977267e-45,
+    "n": 32887
+  },
+  "nam|distilbert-base-uncased|encoder_layer_4|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.07492632035075025,
+    "p_value": 3.8423875663185775e-42,
+    "n": 32871
+  },
+  "nam|distilbert-base-uncased|encoder_layer_5|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": 0.006867091966289147,
+    "p_value": 0.21302189906295946,
+    "n": 32887
+  },
+  "nam|distilbert-base-uncased|encoder_layer_5|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": 0.0017283895347547484,
+    "p_value": 0.7540135633384836,
+    "n": 32871
+  },
+  "nam|distilbert-base-uncased|encoder_layer_6|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.030218839805867117,
+    "p_value": 0.0005434509098754656,
+    "n": 13094
+  },
+  "nam|distilbert-base-uncased|encoder_layer_6|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.04204042909590563,
+    "p_value": 1.248140547549586e-06,
+    "n": 13288
+  },
+  "nam|microsoft/mpnet-base|word_embeddings|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.046987540645265655,
+    "p_value": 7.481929507619763e-08,
+    "n": 13094
+  },
+  "nam|microsoft/mpnet-base|word_embeddings|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.06589241915952641,
+    "p_value": 2.8888655661011897e-14,
+    "n": 13288
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_1|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.1125635780963224,
+    "p_value": 3.4538799637427835e-38,
+    "n": 13094
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_1|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.07276288750620527,
+    "p_value": 4.542130764991883e-17,
+    "n": 13288
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_2|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.11132001935786609,
+    "p_value": 2.211135930101225e-37,
+    "n": 13094
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_2|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.0686360216995341,
+    "p_value": 2.3652453724118377e-15,
+    "n": 13288
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_3|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.10643402281245859,
+    "p_value": 2.659808913458499e-34,
+    "n": 13094
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_3|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.06233182761251754,
+    "p_value": 6.406894171439236e-13,
+    "n": 13288
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_4|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.10069815797474843,
+    "p_value": 7.291488924104404e-31,
+    "n": 13094
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_4|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.05734374714031178,
+    "p_value": 3.714489362879249e-11,
+    "n": 13288
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_5|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.10291646552303764,
+    "p_value": 3.597166175880433e-32,
+    "n": 13094
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_5|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.052163762711990684,
+    "p_value": 1.7808045843332198e-09,
+    "n": 13288
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_6|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.10042047668356552,
+    "p_value": 1.0577584718696162e-30,
+    "n": 13094
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_6|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.0505044242567826,
+    "p_value": 5.711405924338036e-09,
+    "n": 13288
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_7|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.09773302746825166,
+    "p_value": 3.6721445913644397e-29,
+    "n": 13094
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_7|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.04993239919611818,
+    "p_value": 8.464500315620908e-09,
+    "n": 13288
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_8|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.09081292020812481,
+    "p_value": 2.182125088661851e-25,
+    "n": 13094
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_8|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.041396613445854116,
+    "p_value": 1.8102156119472232e-06,
+    "n": 13288
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_9|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.09867530209215404,
+    "p_value": 1.0704267993581196e-29,
+    "n": 13094
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_9|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.05689745816413417,
+    "p_value": 5.2568336151799134e-11,
+    "n": 13288
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_10|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.08770900760416596,
+    "p_value": 8.742894739587142e-24,
+    "n": 13094
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_10|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.07635325136010297,
+    "p_value": 1.2124122574883786e-18,
+    "n": 13288
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_11|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.07335343402920838,
+    "p_value": 4.304827819170612e-17,
+    "n": 13094
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_11|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.03184276340719543,
+    "p_value": 0.00024140000470341532,
+    "n": 13288
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_12|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.07822629762112131,
+    "p_value": 3.12421448282956e-19,
+    "n": 13094
+  },
+  "nam|microsoft/mpnet-base|encoder_layer_12|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.04721450949751163,
+    "p_value": 5.1773247096367096e-08,
+    "n": 13288
+  },
+  "nam|Aunsiels/ChildBERT|word_embeddings|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": 0.03036791899715947,
+    "p_value": 0.0005100144078751455,
+    "n": 13094
+  },
+  "nam|Aunsiels/ChildBERT|word_embeddings|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.01076921857426847,
+    "p_value": 0.21448546573348445,
+    "n": 13288
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_1|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.17662762778592606,
+    "p_value": 3.103341659497166e-92,
+    "n": 13094
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_1|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.13266288586772215,
+    "p_value": 3.0821570806885757e-53,
+    "n": 13288
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_2|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.16413817157818758,
+    "p_value": 9.662067555758273e-80,
+    "n": 13094
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_2|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.11677587546898645,
+    "p_value": 1.4387520156958792e-41,
+    "n": 13288
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_3|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.16025969346509722,
+    "p_value": 4.6654711937707886e-76,
+    "n": 13094
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_3|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.11401461202557671,
+    "p_value": 1.0755377775755513e-39,
+    "n": 13288
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_4|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.16672712677015128,
+    "p_value": 2.982471754960841e-82,
+    "n": 13094
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_4|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.11781717634769315,
+    "p_value": 2.7515778427627058e-42,
+    "n": 13288
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_5|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.17019709087932428,
+    "p_value": 1.1089726990634283e-85,
+    "n": 13094
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_5|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.12005100609691612,
+    "p_value": 7.525527868636641e-44,
+    "n": 13288
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_6|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.16684851744411008,
+    "p_value": 2.2690854470066985e-82,
+    "n": 13094
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_6|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.11803014222301778,
+    "p_value": 1.9581917034783577e-42,
+    "n": 13288
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_7|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.16952840703384936,
+    "p_value": 5.147851123420122e-85,
+    "n": 13094
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_7|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.11827123397430507,
+    "p_value": 1.3313463140424354e-42,
+    "n": 13288
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_8|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.17003299035858804,
+    "p_value": 1.6173051821094217e-85,
+    "n": 13094
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_8|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.11862845642227658,
+    "p_value": 7.505394509617772e-43,
+    "n": 13288
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_9|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.16859910624301436,
+    "p_value": 4.30114850285302e-84,
+    "n": 13094
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_9|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.11580314904571112,
+    "p_value": 6.656123230675859e-41,
+    "n": 13288
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_10|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.15800211956915586,
+    "p_value": 5.898041348368968e-74,
+    "n": 13094
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_10|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.10939243738773854,
+    "p_value": 1.1646440895530946e-36,
+    "n": 13288
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_11|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.1435979902946879,
+    "p_value": 2.820759744595306e-61,
+    "n": 13094
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_11|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.10313473159723936,
+    "p_value": 9.379594263676632e-33,
+    "n": 13288
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_12|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.13103586044208224,
+    "p_value": 3.0665387746351435e-51,
+    "n": 13094
+  },
+  "nam|Aunsiels/ChildBERT|encoder_layer_12|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.09760726359138602,
+    "p_value": 1.6965503178672022e-29,
+    "n": 13288
+  },
+  "nam|albert-base-v2|word_embeddings|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.02076356720878168,
+    "p_value": 0.017502227174916413,
+    "n": 13094
+  },
+  "nam|albert-base-v2|word_embeddings|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.05405639541125809,
+    "p_value": 4.510648163761903e-10,
+    "n": 13288
+  },
+  "nam|albert-base-v2|encoder_layer_1|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.08448608092562336,
+    "p_value": 3.5245819635289493e-22,
+    "n": 13094
+  },
+  "nam|albert-base-v2|encoder_layer_1|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.0939655242418474,
+    "p_value": 1.893307704707818e-27,
+    "n": 13288
+  },
+  "nam|albert-base-v2|encoder_layer_2|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.07707529978313236,
+    "p_value": 1.0286783151713335e-18,
+    "n": 13094
+  },
+  "nam|albert-base-v2|encoder_layer_2|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.08923177770409305,
+    "p_value": 6.64329130928773e-25,
+    "n": 13288
+  },
+  "nam|albert-base-v2|encoder_layer_3|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.05400022859381783,
+    "p_value": 6.284906353263972e-10,
+    "n": 13094
+  },
+  "nam|albert-base-v2|encoder_layer_3|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.0734248667557188,
+    "p_value": 2.3590537708063454e-17,
+    "n": 13288
+  },
+  "nam|albert-base-v2|encoder_layer_4|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.023809326474948194,
+    "p_value": 0.006437866463429654,
+    "n": 13094
+  },
+  "nam|albert-base-v2|encoder_layer_4|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.03902812888373604,
+    "p_value": 6.788839110588142e-06,
+    "n": 13288
+  },
+  "nam|albert-base-v2|encoder_layer_5|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.04374251466541985,
+    "p_value": 5.518976257795006e-07,
+    "n": 13094
+  },
+  "nam|albert-base-v2|encoder_layer_5|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.04184667500598411,
+    "p_value": 1.3966915688816063e-06,
+    "n": 13288
+  },
+  "nam|albert-base-v2|encoder_layer_6|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.019272815135488307,
+    "p_value": 0.027428592326970754,
+    "n": 13094
+  },
+  "nam|albert-base-v2|encoder_layer_6|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.03504252553320372,
+    "p_value": 5.3374122221769964e-05,
+    "n": 13288
+  },
+  "nam|albert-base-v2|encoder_layer_7|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.0240010412256871,
+    "p_value": 0.006022589359999422,
+    "n": 13094
+  },
+  "nam|albert-base-v2|encoder_layer_7|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.015321056805642483,
+    "p_value": 0.07738734591307588,
+    "n": 13288
+  },
+  "nam|albert-base-v2|encoder_layer_8|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.015540789786768263,
+    "p_value": 0.07536199841675564,
+    "n": 13094
+  },
+  "nam|albert-base-v2|encoder_layer_8|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.009778245641838585,
+    "p_value": 0.2597025874887182,
+    "n": 13288
+  },
+  "nam|albert-base-v2|encoder_layer_9|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.015629279278273588,
+    "p_value": 0.07371447047057635,
+    "n": 13094
+  },
+  "nam|albert-base-v2|encoder_layer_9|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.009529052248622757,
+    "p_value": 0.27204311454295965,
+    "n": 13288
+  },
+  "nam|albert-base-v2|encoder_layer_10|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.01805323755714191,
+    "p_value": 0.03884875190791146,
+    "n": 13094
+  },
+  "nam|albert-base-v2|encoder_layer_10|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.032991517285054464,
+    "p_value": 0.0001425345913449707,
+    "n": 13288
+  },
+  "nam|albert-base-v2|encoder_layer_11|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.01792122577254584,
+    "p_value": 0.04029839781810755,
+    "n": 13094
+  },
+  "nam|albert-base-v2|encoder_layer_11|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.030756793401991476,
+    "p_value": 0.00039119861248341955,
+    "n": 13288
+  },
+  "nam|albert-base-v2|encoder_layer_12|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.005647261250095977,
+    "p_value": 0.5181796171280774,
+    "n": 13094
+  },
+  "nam|albert-base-v2|encoder_layer_12|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.02326674603867985,
+    "p_value": 0.007315020865822533,
+    "n": 13288
+  },
+  "nam|FacebookAI/xlm-roberta-base|word_embeddings|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": 0.0725292975987002,
+    "p_value": 9.601794264086542e-17,
+    "n": 13094
+  },
+  "nam|FacebookAI/xlm-roberta-base|word_embeddings|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": 0.016272620217804637,
+    "p_value": 0.06068947481463531,
+    "n": 13288
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_1|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.13735361529415407,
+    "p_value": 3.609580640393898e-56,
+    "n": 13094
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_1|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.0972464230928204,
+    "p_value": 2.7286221182213593e-29,
+    "n": 13288
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_2|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.08263534295572454,
+    "p_value": 2.767013311179177e-21,
+    "n": 13094
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_2|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.06504151202738945,
+    "p_value": 6.151773550724237e-14,
+    "n": 13288
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_3|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.0955698903424748,
+    "p_value": 5.948761788876033e-28,
+    "n": 13094
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_3|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.07335272137576117,
+    "p_value": 2.534366545980091e-17,
+    "n": 13288
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_4|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.09516031612011043,
+    "p_value": 1.0008787585706031e-27,
+    "n": 13094
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_4|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.07268215979389789,
+    "p_value": 4.917940604113159e-17,
+    "n": 13288
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_5|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.10058010202484335,
+    "p_value": 8.542058146827868e-31,
+    "n": 13094
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_5|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.0740996953886446,
+    "p_value": 1.2024909546505121e-17,
+    "n": 13288
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_6|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.0988030751550611,
+    "p_value": 9.048241585150487e-30,
+    "n": 13094
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_6|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.07122552720555736,
+    "p_value": 2.0334970118004886e-16,
+    "n": 13288
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_7|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.08489075788424387,
+    "p_value": 2.232578191855369e-22,
+    "n": 13094
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_7|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.06293072329207408,
+    "p_value": 3.8490763541869985e-13,
+    "n": 13288
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_8|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.08981990214847728,
+    "p_value": 7.206049823226414e-25,
+    "n": 13094
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_8|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.061401162989955474,
+    "p_value": 1.401017704956701e-12,
+    "n": 13288
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_9|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.12410635826941692,
+    "p_value": 4.163905625489573e-46,
+    "n": 13094
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_9|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.08931475475905024,
+    "p_value": 6.01037029129118e-25,
+    "n": 13288
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_10|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.12759035734239965,
+    "p_value": 1.187136368747498e-48,
+    "n": 13094
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_10|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.09341291979620657,
+    "p_value": 3.811699131057729e-27,
+    "n": 13288
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_11|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.12125674815721434,
+    "p_value": 4.442078939044448e-44,
+    "n": 13094
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_11|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.0908882931767504,
+    "p_value": 8.844829411976495e-26,
+    "n": 13288
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_12|aggregated|isi=50": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.12451088781008292,
+    "p_value": 2.1266473200891673e-46,
+    "n": 13094
+  },
+  "nam|FacebookAI/xlm-roberta-base|encoder_layer_12|aggregated|isi=1050": {
+    "dataset": "nam",
+    "model": "FacebookAI/xlm-roberta-base",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.09294089392283737,
+    "p_value": 6.906880369315833e-27,
+    "n": 13288
+  },
+  "ldt|bert-base-uncased|word_embeddings|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": 0.2058085310986081,
+    "p_value": 0.0,
+    "n": 52680
+  },
+  "ldt|bert-base-uncased|word_embeddings|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": 0.1805307402166657,
+    "p_value": 0.0,
+    "n": 52454
+  },
+  "ldt|bert-base-uncased|encoder_layer_1|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.5092552516548688,
+    "p_value": 0.0,
+    "n": 52680
+  },
+  "ldt|bert-base-uncased|encoder_layer_1|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.4856995979926214,
+    "p_value": 0.0,
+    "n": 52454
+  },
+  "ldt|bert-base-uncased|encoder_layer_2|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.5008897607170986,
+    "p_value": 0.0,
+    "n": 52680
+  },
+  "ldt|bert-base-uncased|encoder_layer_2|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.4736290473573287,
+    "p_value": 0.0,
+    "n": 52454
+  },
+  "ldt|bert-base-uncased|encoder_layer_3|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.49530751794323946,
+    "p_value": 0.0,
+    "n": 52680
+  },
+  "ldt|bert-base-uncased|encoder_layer_3|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.468004366674227,
+    "p_value": 0.0,
+    "n": 52454
+  },
+  "ldt|bert-base-uncased|encoder_layer_4|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.4679542645860751,
+    "p_value": 0.0,
+    "n": 52680
+  },
+  "ldt|bert-base-uncased|encoder_layer_4|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.4417131829340116,
+    "p_value": 0.0,
+    "n": 52454
+  },
+  "ldt|bert-base-uncased|encoder_layer_5|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.3038942130639885,
+    "p_value": 0.0,
+    "n": 52680
+  },
+  "ldt|bert-base-uncased|encoder_layer_5|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.28582439061775017,
+    "p_value": 0.0,
+    "n": 52454
+  },
+  "ldt|bert-base-uncased|encoder_layer_6|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.10296531662399112,
+    "p_value": 4.044234371560051e-124,
+    "n": 52680
+  },
+  "ldt|bert-base-uncased|encoder_layer_6|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.09684960225580828,
+    "p_value": 1.6453463154220493e-109,
+    "n": 52454
+  },
+  "ldt|bert-base-uncased|encoder_layer_7|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.06462840306935046,
+    "p_value": 7.086373952827042e-50,
+    "n": 52680
+  },
+  "ldt|bert-base-uncased|encoder_layer_7|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.06305125306938546,
+    "p_value": 2.346073515157446e-47,
+    "n": 52454
+  },
+  "ldt|bert-base-uncased|encoder_layer_8|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.02977244755696046,
+    "p_value": 8.214132127554589e-12,
+    "n": 52680
+  },
+  "ldt|bert-base-uncased|encoder_layer_8|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.02676863801455777,
+    "p_value": 8.692830657524028e-10,
+    "n": 52454
+  },
+  "ldt|bert-base-uncased|encoder_layer_9|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": 0.0007668050577507316,
+    "p_value": 0.8602987362712792,
+    "n": 52680
+  },
+  "ldt|bert-base-uncased|encoder_layer_9|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": 0.0025556644934110096,
+    "p_value": 0.5583415022858499,
+    "n": 52454
+  },
+  "ldt|bert-base-uncased|encoder_layer_10|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": 0.019687756754932145,
+    "p_value": 6.210625719017593e-06,
+    "n": 52680
+  },
+  "ldt|bert-base-uncased|encoder_layer_10|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": 0.021533351930315504,
+    "p_value": 8.130732555482149e-07,
+    "n": 52454
+  },
+  "ldt|bert-base-uncased|encoder_layer_11|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": 0.046258527549179744,
+    "p_value": 2.335791817380249e-26,
+    "n": 52680
+  },
+  "ldt|bert-base-uncased|encoder_layer_11|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": 0.04768677369963924,
+    "p_value": 8.5086477058966e-28,
+    "n": 52454
+  },
+  "ldt|bert-base-uncased|encoder_layer_12|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": 0.01175563819244179,
+    "p_value": 0.006971598978370352,
+    "n": 52680
+  },
+  "ldt|bert-base-uncased|encoder_layer_12|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "bert-base-uncased",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": 0.010167425617503308,
+    "p_value": 0.019878477361341806,
+    "n": 52454
+  },
+  "ldt|roberta-base|word_embeddings|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": 0.02368759287170683,
+    "p_value": 5.405167430075522e-08,
+    "n": 52680
+  },
+  "ldt|roberta-base|word_embeddings|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": 0.01185022241953902,
+    "p_value": 0.006646254560469578,
+    "n": 52454
+  },
+  "ldt|roberta-base|encoder_layer_1|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.29325175464114395,
+    "p_value": 0.0,
+    "n": 52680
+  },
+  "ldt|roberta-base|encoder_layer_1|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.27002141792840034,
+    "p_value": 0.0,
+    "n": 52454
+  },
+  "ldt|roberta-base|encoder_layer_2|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.2540442560203107,
+    "p_value": 0.0,
+    "n": 52680
+  },
+  "ldt|roberta-base|encoder_layer_2|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.23683927845505,
+    "p_value": 0.0,
+    "n": 52454
+  },
+  "ldt|roberta-base|encoder_layer_3|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.2165919497690169,
+    "p_value": 0.0,
+    "n": 52680
+  },
+  "ldt|roberta-base|encoder_layer_3|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.20084324724026265,
+    "p_value": 0.0,
+    "n": 52454
+  },
+  "ldt|roberta-base|encoder_layer_4|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.1450275521860769,
+    "p_value": 1.6562618068377993e-245,
+    "n": 52680
+  },
+  "ldt|roberta-base|encoder_layer_4|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.13336417327309313,
+    "p_value": 1.0333204818856349e-206,
+    "n": 52454
+  },
+  "ldt|roberta-base|encoder_layer_5|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.11211151569958062,
+    "p_value": 6.373962319176502e-147,
+    "n": 52680
+  },
+  "ldt|roberta-base|encoder_layer_5|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.10314058607539413,
+    "p_value": 5.17886665034531e-124,
+    "n": 52454
+  },
+  "ldt|roberta-base|encoder_layer_6|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.08178768390871217,
+    "p_value": 7.126750667531856e-79,
+    "n": 52680
+  },
+  "ldt|roberta-base|encoder_layer_6|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.07628537945317823,
+    "p_value": 1.5208281177458107e-68,
+    "n": 52454
+  },
+  "ldt|roberta-base|encoder_layer_7|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.07821581126193591,
+    "p_value": 2.829851293634468e-72,
+    "n": 52680
+  },
+  "ldt|roberta-base|encoder_layer_7|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.07198144558630991,
+    "p_value": 3.277271240333853e-61,
+    "n": 52454
+  },
+  "ldt|roberta-base|encoder_layer_8|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.06864571693376756,
+    "p_value": 4.7063992879366305e-56,
+    "n": 52680
+  },
+  "ldt|roberta-base|encoder_layer_8|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.06367980419985951,
+    "p_value": 2.8519285600369524e-48,
+    "n": 52454
+  },
+  "ldt|roberta-base|encoder_layer_9|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.07579995034656245,
+    "p_value": 5.583251957877653e-68,
+    "n": 52680
+  },
+  "ldt|roberta-base|encoder_layer_9|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.0729166510627804,
+    "p_value": 9.086045948690076e-63,
+    "n": 52454
+  },
+  "ldt|roberta-base|encoder_layer_10|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.1085246828020533,
+    "p_value": 9.607434525371003e-138,
+    "n": 52680
+  },
+  "ldt|roberta-base|encoder_layer_10|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.10055007005226153,
+    "p_value": 6.283969666264279e-118,
+    "n": 52454
+  },
+  "ldt|roberta-base|encoder_layer_11|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.16250755729872407,
+    "p_value": 1.525330407883347e-308,
+    "n": 52680
+  },
+  "ldt|roberta-base|encoder_layer_11|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.1493222369417719,
+    "p_value": 3.4155694308695293e-259,
+    "n": 52454
+  },
+  "ldt|roberta-base|encoder_layer_12|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.1761893928641646,
+    "p_value": 0.0,
+    "n": 52680
+  },
+  "ldt|roberta-base|encoder_layer_12|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "roberta-base",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.16257520126527392,
+    "p_value": 1.7389756137113348e-307,
+    "n": 52454
+  },
+  "ldt|distilbert-base-uncased|word_embeddings|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "distilbert-base-uncased",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": 0.19533644962971394,
+    "p_value": 0.0,
+    "n": 52680
+  },
+  "ldt|distilbert-base-uncased|word_embeddings|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "distilbert-base-uncased",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": 0.16995587154404032,
+    "p_value": 0.0,
+    "n": 52454
+  },
+  "ldt|distilbert-base-uncased|encoder_layer_1|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.4492142418272385,
+    "p_value": 0.0,
+    "n": 52680
+  },
+  "ldt|distilbert-base-uncased|encoder_layer_1|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.4292229594396063,
+    "p_value": 0.0,
+    "n": 52454
+  },
+  "ldt|distilbert-base-uncased|encoder_layer_2|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.3586737710186234,
+    "p_value": 0.0,
+    "n": 52680
+  },
+  "ldt|distilbert-base-uncased|encoder_layer_2|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.34746735251392524,
+    "p_value": 0.0,
+    "n": 52454
+  },
+  "ldt|distilbert-base-uncased|encoder_layer_3|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.20665437677753754,
+    "p_value": 0.0,
+    "n": 52680
+  },
+  "ldt|distilbert-base-uncased|encoder_layer_3|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.20061233705795503,
+    "p_value": 0.0,
+    "n": 52454
+  },
+  "ldt|distilbert-base-uncased|encoder_layer_4|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.06652187332107931,
+    "p_value": 9.663029301147529e-53,
+    "n": 52680
+  },
+  "ldt|distilbert-base-uncased|encoder_layer_4|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.06510407802882338,
+    "p_value": 2.227207475470177e-50,
+    "n": 52454
+  },
+  "ldt|distilbert-base-uncased|encoder_layer_5|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": 0.012687593891873815,
+    "p_value": 0.0035898424092425255,
+    "n": 52680
+  },
+  "ldt|distilbert-base-uncased|encoder_layer_5|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": 0.0042031745646385855,
+    "p_value": 0.335734450107107,
+    "n": 52454
+  },
+  "ldt|distilbert-base-uncased|encoder_layer_6|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.04834227550481477,
+    "p_value": 1.762123819219724e-18,
+    "n": 32887
+  },
+  "ldt|distilbert-base-uncased|encoder_layer_6|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "distilbert-base-uncased",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.0491520007018905,
+    "p_value": 4.81319292479289e-19,
+    "n": 32871
+  },
+  "ldt|microsoft/mpnet-base|word_embeddings|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.21831312247839574,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|microsoft/mpnet-base|word_embeddings|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.21532750182202298,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_1|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.5326932179267567,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_1|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.5047433096952088,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_2|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.5290196508421113,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_2|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.505523371643657,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_3|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.5277526950492665,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_3|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.5048362520913613,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_4|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.5254314275664146,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_4|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.5046890501352288,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_5|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.5113450639118091,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_5|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.4917593643368192,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_6|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.5010325573306518,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_6|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.4842258469656193,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_7|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.4977777734332636,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_7|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.48114073289477094,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_8|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.5083760568975414,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_8|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.48854394046438243,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_9|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.5109789490328281,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_9|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.49317335604204415,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_10|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.511028629613596,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_10|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.4953386149046211,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_11|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.5125063708858605,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_11|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.4936185063323153,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_12|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.5139337078171256,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|microsoft/mpnet-base|encoder_layer_12|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "microsoft/mpnet-base",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.49694031208804684,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|Aunsiels/ChildBERT|word_embeddings|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.001243882958757811,
+    "p_value": 0.8215383129974904,
+    "n": 32887
+  },
+  "ldt|Aunsiels/ChildBERT|word_embeddings|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.017760913035134968,
+    "p_value": 0.001280791959498539,
+    "n": 32871
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_1|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.4742042500183272,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_1|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.45359360070275795,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_2|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.40927685176459455,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_2|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.39066260641418704,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_3|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.3750966026932679,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_3|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.35443485565747873,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_4|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.3985381661181362,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_4|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.3752879254635857,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_5|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.43360209430630886,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_5|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.4078565161727092,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_6|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.44237269859298517,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_6|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.4165560563207765,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_7|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.4583572474866507,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_7|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.43120309552923797,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_8|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.45895824859147555,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_8|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.43251787945725684,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_9|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.4496723905942181,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_9|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.4246335568188419,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_10|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.4107251628236982,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_10|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.38978325851419954,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_11|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.34627461905941503,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_11|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.3283683725793614,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_12|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.3060369796251679,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|Aunsiels/ChildBERT|encoder_layer_12|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "Aunsiels/ChildBERT",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.29228273840167623,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|albert-base-v2|word_embeddings|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.31545865421971,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|albert-base-v2|word_embeddings|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "word_embeddings",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.31343161164500144,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|albert-base-v2|encoder_layer_1|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.4339639703895229,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|albert-base-v2|encoder_layer_1|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_1",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.4241641442108902,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|albert-base-v2|encoder_layer_2|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.3856969629283792,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|albert-base-v2|encoder_layer_2|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_2",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.3775637679931814,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|albert-base-v2|encoder_layer_3|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.25604856945550825,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|albert-base-v2|encoder_layer_3|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_3",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.2525048146878888,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|albert-base-v2|encoder_layer_4|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.2180146867723022,
+    "p_value": 0.0,
+    "n": 32887
+  },
+  "ldt|albert-base-v2|encoder_layer_4|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_4",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.21295903681856537,
+    "p_value": 0.0,
+    "n": 32871
+  },
+  "ldt|albert-base-v2|encoder_layer_5|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.14435540888509174,
+    "p_value": 1.2758702087245167e-152,
+    "n": 32887
+  },
+  "ldt|albert-base-v2|encoder_layer_5|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_5",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.13626753055513446,
+    "p_value": 5.3584395130392746e-136,
+    "n": 32871
+  },
+  "ldt|albert-base-v2|encoder_layer_6|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.13425865619532204,
+    "p_value": 4.20056494580126e-132,
+    "n": 32887
+  },
+  "ldt|albert-base-v2|encoder_layer_6|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_6",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.13218538397468232,
+    "p_value": 5.097745629346069e-128,
+    "n": 32871
+  },
+  "ldt|albert-base-v2|encoder_layer_7|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.10383060662392661,
+    "p_value": 1.6729669042807046e-79,
+    "n": 32887
+  },
+  "ldt|albert-base-v2|encoder_layer_7|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_7",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.10180352929577713,
+    "p_value": 1.8909894202534078e-76,
+    "n": 32871
+  },
+  "ldt|albert-base-v2|encoder_layer_8|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.08510856637876701,
+    "p_value": 6.289889568003054e-54,
+    "n": 32887
+  },
+  "ldt|albert-base-v2|encoder_layer_8|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_8",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.08469718146270182,
+    "p_value": 2.129612592459125e-53,
+    "n": 32871
+  },
+  "ldt|albert-base-v2|encoder_layer_9|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.07028877877494254,
+    "p_value": 2.672100393959092e-37,
+    "n": 32887
+  },
+  "ldt|albert-base-v2|encoder_layer_9|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_9",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.0668832081824166,
+    "p_value": 6.53831357832791e-34,
+    "n": 32871
+  },
+  "ldt|albert-base-v2|encoder_layer_10|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.05739303552981324,
+    "p_value": 2.089515468684261e-25,
+    "n": 32887
+  },
+  "ldt|albert-base-v2|encoder_layer_10|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_10",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.05766532151162222,
+    "p_value": 1.274219962584518e-25,
+    "n": 32871
+  },
+  "ldt|albert-base-v2|encoder_layer_11|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.05830166286412874,
+    "p_value": 3.6320172716868e-26,
+    "n": 32887
+  },
+  "ldt|albert-base-v2|encoder_layer_11|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_11",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.054303229528997035,
+    "p_value": 6.701521893282654e-23,
+    "n": 32871
+  },
+  "ldt|albert-base-v2|encoder_layer_12|aggregated|isi=50": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 50,
+    "spearman_rho": -0.0664936559862417,
+    "p_value": 1.4961190328423743e-33,
+    "n": 32887
+  },
+  "ldt|albert-base-v2|encoder_layer_12|aggregated|isi=1050": {
+    "dataset": "ldt",
+    "model": "albert-base-v2",
+    "component": "encoder_layer_12",
+    "relation": "aggregated",
+    "isi": 1050,
+    "spearman_rho": -0.062360284676492087,
+    "p_value": 1.0844229905267851e-29,
+    "n": 32871
+  },
+  "ldt|FacebookAI/xlm-roberta-base|word_embeddings|aggregated|isi=50": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "word_embeddings",
     "relation": "aggregated",
-    "isi": 50.0,
-    "spearman_rho": 0.11969462089794107,
-    "p_value": 5.324405556685444e-168,
-    "n": 52893
+    "isi": 50,
+    "spearman_rho": 0.11816926921198607,
+    "p_value": 1.4192843504363668e-102,
+    "n": 32887
   },
-  "ldt|FacebookAI/xlm-roberta-base|word_embeddings|aggregated|isi=1050.0": {
+  "ldt|FacebookAI/xlm-roberta-base|word_embeddings|aggregated|isi=1050": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "word_embeddings",
     "relation": "aggregated",
-    "isi": 1050.0,
-    "spearman_rho": 0.10582792341850981,
-    "p_value": 3.0154234045739005e-131,
-    "n": 52763
+    "isi": 1050,
+    "spearman_rho": 0.1010384646623834,
+    "p_value": 2.506648250837766e-75,
+    "n": 32871
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_1|aggregated|isi=50.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_1|aggregated|isi=50": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_1",
     "relation": "aggregated",
-    "isi": 50.0,
-    "spearman_rho": -0.29246953544244386,
+    "isi": 50,
+    "spearman_rho": -0.29576379036853384,
     "p_value": 0.0,
-    "n": 52893
+    "n": 32887
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_1|aggregated|isi=1050.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_1|aggregated|isi=1050": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_1",
     "relation": "aggregated",
-    "isi": 1050.0,
-    "spearman_rho": -0.2735526176811338,
+    "isi": 1050,
+    "spearman_rho": -0.27669442377278625,
     "p_value": 0.0,
-    "n": 52763
+    "n": 32871
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_2|aggregated|isi=50.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_2|aggregated|isi=50": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_2",
     "relation": "aggregated",
-    "isi": 50.0,
-    "spearman_rho": -0.1795071844785768,
-    "p_value": 0.0,
-    "n": 52893
+    "isi": 50,
+    "spearman_rho": -0.1835769056906647,
+    "p_value": 3.796786144842343e-247,
+    "n": 32887
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_2|aggregated|isi=1050.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_2|aggregated|isi=1050": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_2",
     "relation": "aggregated",
-    "isi": 1050.0,
-    "spearman_rho": -0.17184931092845196,
-    "p_value": 0.0,
-    "n": 52763
+    "isi": 1050,
+    "spearman_rho": -0.1760996251714148,
+    "p_value": 3.58004938518054e-227,
+    "n": 32871
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_3|aggregated|isi=50.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_3|aggregated|isi=50": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_3",
     "relation": "aggregated",
-    "isi": 50.0,
-    "spearman_rho": -0.21024438388968342,
+    "isi": 50,
+    "spearman_rho": -0.21428213909171315,
     "p_value": 0.0,
-    "n": 52893
+    "n": 32887
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_3|aggregated|isi=1050.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_3|aggregated|isi=1050": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_3",
     "relation": "aggregated",
-    "isi": 1050.0,
-    "spearman_rho": -0.20039010903334536,
-    "p_value": 0.0,
-    "n": 52763
+    "isi": 1050,
+    "spearman_rho": -0.20460984223081727,
+    "p_value": 1.2248989776105942e-307,
+    "n": 32871
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_4|aggregated|isi=50.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_4|aggregated|isi=50": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_4",
     "relation": "aggregated",
-    "isi": 50.0,
-    "spearman_rho": -0.21535454254026062,
+    "isi": 50,
+    "spearman_rho": -0.21886939568721445,
     "p_value": 0.0,
-    "n": 52893
+    "n": 32887
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_4|aggregated|isi=1050.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_4|aggregated|isi=1050": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_4",
     "relation": "aggregated",
-    "isi": 1050.0,
-    "spearman_rho": -0.2018585409657761,
+    "isi": 1050,
+    "spearman_rho": -0.20608438545246716,
     "p_value": 0.0,
-    "n": 52763
+    "n": 32871
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_5|aggregated|isi=50.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_5|aggregated|isi=50": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_5",
     "relation": "aggregated",
-    "isi": 50.0,
-    "spearman_rho": -0.22268092954829838,
+    "isi": 50,
+    "spearman_rho": -0.2253965898452653,
     "p_value": 0.0,
-    "n": 52893
+    "n": 32887
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_5|aggregated|isi=1050.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_5|aggregated|isi=1050": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_5",
     "relation": "aggregated",
-    "isi": 1050.0,
-    "spearman_rho": -0.20646280398376293,
+    "isi": 1050,
+    "spearman_rho": -0.21015713203495726,
     "p_value": 0.0,
-    "n": 52763
+    "n": 32871
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_6|aggregated|isi=50.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_6|aggregated|isi=50": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_6",
     "relation": "aggregated",
-    "isi": 50.0,
-    "spearman_rho": -0.23275707151869965,
+    "isi": 50,
+    "spearman_rho": -0.23520232685503406,
     "p_value": 0.0,
-    "n": 52893
+    "n": 32887
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_6|aggregated|isi=1050.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_6|aggregated|isi=1050": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_6",
     "relation": "aggregated",
-    "isi": 1050.0,
-    "spearman_rho": -0.2138583689983382,
+    "isi": 1050,
+    "spearman_rho": -0.21799130449481405,
     "p_value": 0.0,
-    "n": 52763
+    "n": 32871
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_7|aggregated|isi=50.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_7|aggregated|isi=50": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_7",
     "relation": "aggregated",
-    "isi": 50.0,
-    "spearman_rho": -0.1764431460571673,
-    "p_value": 0.0,
-    "n": 52893
+    "isi": 50,
+    "spearman_rho": -0.18161738892026422,
+    "p_value": 7.419557808278621e-242,
+    "n": 32887
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_7|aggregated|isi=1050.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_7|aggregated|isi=1050": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_7",
     "relation": "aggregated",
-    "isi": 1050.0,
-    "spearman_rho": -0.1625292962428013,
-    "p_value": 4.14425642696846e-309,
-    "n": 52763
+    "isi": 1050,
+    "spearman_rho": -0.16956387767434838,
+    "p_value": 1.554466844969257e-210,
+    "n": 32871
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_8|aggregated|isi=50.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_8|aggregated|isi=50": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_8",
     "relation": "aggregated",
-    "isi": 50.0,
-    "spearman_rho": -0.20204858937258427,
+    "isi": 50,
+    "spearman_rho": -0.2068836968433494,
     "p_value": 0.0,
-    "n": 52893
+    "n": 32887
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_8|aggregated|isi=1050.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_8|aggregated|isi=1050": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_8",
     "relation": "aggregated",
-    "isi": 1050.0,
-    "spearman_rho": -0.184690218861085,
-    "p_value": 0.0,
-    "n": 52763
+    "isi": 1050,
+    "spearman_rho": -0.1908920552682837,
+    "p_value": 2.627788088428878e-267,
+    "n": 32871
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_9|aggregated|isi=50.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_9|aggregated|isi=50": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_9",
     "relation": "aggregated",
-    "isi": 50.0,
-    "spearman_rho": -0.27048670178874534,
+    "isi": 50,
+    "spearman_rho": -0.2731440855089767,
     "p_value": 0.0,
-    "n": 52893
+    "n": 32887
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_9|aggregated|isi=1050.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_9|aggregated|isi=1050": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_9",
     "relation": "aggregated",
-    "isi": 1050.0,
-    "spearman_rho": -0.24937341795547932,
+    "isi": 1050,
+    "spearman_rho": -0.25320691871100137,
     "p_value": 0.0,
-    "n": 52763
+    "n": 32871
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_10|aggregated|isi=50.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_10|aggregated|isi=50": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_10",
     "relation": "aggregated",
-    "isi": 50.0,
-    "spearman_rho": -0.2644553174622476,
+    "isi": 50,
+    "spearman_rho": -0.267603645495504,
     "p_value": 0.0,
-    "n": 52893
+    "n": 32887
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_10|aggregated|isi=1050.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_10|aggregated|isi=1050": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_10",
     "relation": "aggregated",
-    "isi": 1050.0,
-    "spearman_rho": -0.24527602290896802,
+    "isi": 1050,
+    "spearman_rho": -0.2487926867607407,
     "p_value": 0.0,
-    "n": 52763
+    "n": 32871
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_11|aggregated|isi=50.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_11|aggregated|isi=50": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_11",
     "relation": "aggregated",
-    "isi": 50.0,
-    "spearman_rho": -0.2614046716718801,
+    "isi": 50,
+    "spearman_rho": -0.2632653170532304,
     "p_value": 0.0,
-    "n": 52893
+    "n": 32887
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_11|aggregated|isi=1050.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_11|aggregated|isi=1050": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_11",
     "relation": "aggregated",
-    "isi": 1050.0,
-    "spearman_rho": -0.24202132334636353,
+    "isi": 1050,
+    "spearman_rho": -0.2451150870308807,
     "p_value": 0.0,
-    "n": 52763
+    "n": 32871
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_12|aggregated|isi=50.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_12|aggregated|isi=50": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_12",
     "relation": "aggregated",
-    "isi": 50.0,
-    "spearman_rho": -0.26513563550710706,
+    "isi": 50,
+    "spearman_rho": -0.26602606309407145,
     "p_value": 0.0,
-    "n": 52893
+    "n": 32887
   },
-  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_12|aggregated|isi=1050.0": {
+  "ldt|FacebookAI/xlm-roberta-base|encoder_layer_12|aggregated|isi=1050": {
     "dataset": "ldt",
     "model": "FacebookAI/xlm-roberta-base",
     "component": "encoder_layer_12",
     "relation": "aggregated",
-    "isi": 1050.0,
-    "spearman_rho": -0.24393790441294297,
+    "isi": 1050,
+    "spearman_rho": -0.2469823519877627,
     "p_value": 0.0,
-    "n": 52763
+    "n": 32871
   }
 }

@@ -60,8 +60,18 @@ def write_rho(
 	data[entry_key] = record
 
 	with open(rho_file, "w") as f:
-		json.dump(data, f, indent=2)
+		json.dump(data, f, indent=2, default=convert_numpy)
 
+
+
+def convert_numpy(obj):
+    if isinstance(obj, np.integer):
+        return int(obj)
+    if isinstance(obj, np.floating):
+        return float(obj)
+    if isinstance(obj, np.ndarray):
+        return obj.tolist()
+    raise TypeError(f"Type {type(obj)} not serializable")
 
 def compute_or_load_cosines(
     data,
@@ -70,7 +80,7 @@ def compute_or_load_cosines(
     *,
     model="bert-base-uncased",
     component="",
-    embedding_dir="D:/redone_heatmaps"
+    embedding_dir="D:/heat_embeddings"
 ):
     """
     Compute cosine similarities using cached encoder-layer embeddings.

@@ -271,6 +271,8 @@ if __name__ == "__main__":
 	with open(args.input, "rb") as f:
 		rsa_acc_whole = pickle.load(f)
 
+	print(list(rsa_acc_whole["ldt"].keys())[0])
+
 	top3_layers = defaultdict(lambda: defaultdict(dict))
 	all_layers = set()
 

@@ -4,10 +4,10 @@ relatedness_dir = {
 	1.0 : "first-associate-related",
 	2.0 : "first-associate-unrelated",
 	3.0 : "other_associate-related",
-	4.0 : "other-associate-related",
+	4.0 : "other-associate-unrelated",
 }
 
-saver = "data/all naming subjects.xlsx"
+saver = "data/ldt.xlsx"
 data = parse_data(
 		saver,
 		extract_dict={
@@ -66,5 +66,5 @@ for relation, n in counts.items():
 
 data = data[data["relation"].map(counts) >= 200]
 
-compressed = "data/naming_compressed.xlsx"
+compressed = "data/ldt_compressed.xlsx"
 data.to_excel(compressed, index=False)
