@@ -1,0 +1,27 @@
+\begin{table}[ht]
+\centering
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lccccccc}
+\toprule
+Component & Aunsiels/ChildBERT & FacebookAI/xlm-roberta-base & albert-base-v2 & bert-base-uncased & distilbert-base-uncased & microsoft/mpnet-base & roberta-base \\
+\midrule
+word\_embeddings & 0.239$^{*}$ & 0.208$^{*}$ & -0.102$^{*}$ & 0.364$^{*}$ & 0.324$^{*}$ & 0.060$^{*}$ & 0.138$^{*}$ \\
+encoder\_layer\_1 & -0.388$^{*}$ & -0.251$^{*}$ & -0.284$^{*}$ & -0.424$^{*}$ & -0.330$^{*}$ & -0.464$^{*}$ & -0.214$^{*}$ \\
+encoder\_layer\_2 & -0.311$^{*}$ & -0.139$^{*}$ & -0.226$^{*}$ & -0.415$^{*}$ & -0.222$^{*}$ & -0.465$^{*}$ & -0.185$^{*}$ \\
+encoder\_layer\_3 & -0.268$^{*}$ & -0.174$^{*}$ & -0.070$^{*}$ & -0.411$^{*}$ & -0.063$^{*}$ & -0.463$^{*}$ & -0.141$^{*}$ \\
+encoder\_layer\_4 & -0.299$^{*}$ & -0.174$^{*}$ & -0.058$^{*}$ & -0.383$^{*}$ & 0.053$^{*}$ & -0.462$^{*}$ & -0.071$^{*}$ \\
+encoder\_layer\_5 & -0.343$^{*}$ & -0.183$^{*}$ & -0.007 & -0.208$^{*}$ & 0.091$^{*}$ & -0.449$^{*}$ & -0.040$^{*}$ \\
+encoder\_layer\_6 & -0.355$^{*}$ & -0.192$^{*}$ & -0.028$^{*}$ & -0.024$^{*}$ & 0.064$^{*}$ & -0.439$^{*}$ & -0.017$^{\dagger}$ \\
+encoder\_layer\_7 & -0.378$^{*}$ & -0.139$^{*}$ & -0.006 & 0.007 &  & -0.435$^{*}$ & -0.016$^{\dagger}$ \\
+encoder\_layer\_8 & -0.379$^{*}$ & -0.164$^{*}$ & -0.002 & 0.034$^{*}$ &  & -0.449$^{*}$ & -0.010 \\
+encoder\_layer\_9 & -0.370$^{*}$ & -0.235$^{*}$ & -0.000 & 0.049$^{*}$ &  & -0.457$^{*}$ & -0.018$^{*}$ \\
+encoder\_layer\_10 & -0.324$^{*}$ & -0.230$^{*}$ & 0.001 & 0.062$^{*}$ &  & -0.460$^{*}$ & -0.043$^{*}$ \\
+encoder\_layer\_11 & -0.250$^{*}$ & -0.228$^{*}$ & -0.010 & 0.086$^{*}$ &  & -0.460$^{*}$ & -0.092$^{*}$ \\
+encoder\_layer\_12 & -0.212$^{*}$ & -0.231$^{*}$ & -0.019$^{\dagger}$ & 0.055$^{*}$ &  & -0.462$^{*}$ & -0.109$^{*}$ \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\caption{Spearman $\rho$ between cosine similarity and RT (LDT, relation other_associate-related, ISI=1050 ms). $^*$ $p<.01$, $^\dagger$ $.01\leq p \leq .05$.}
+\label{tab:ldt_relother_associate-related_isi1050}
+\end{table}

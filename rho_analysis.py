@@ -4,6 +4,23 @@ import os
 from typing import List
 from matplotlib import pyplot as plt
 
+plt.rcParams.update({
+	"figure.dpi": 300,
+	"savefig.dpi": 300,
+
+	"font.size": 13,
+	"axes.titlesize": 15,
+	"axes.labelsize": 14,
+	"xtick.labelsize": 12,
+	"ytick.labelsize": 12,
+	"legend.fontsize": 12,
+
+	"axes.linewidth": 1.2,
+	"lines.linewidth": 1.5,
+	"lines.markersize": 3,
+})
+
+
 # ============================================================
 # Utils
 # ============================================================
@@ -11,30 +28,57 @@ from matplotlib import pyplot as plt
 def latex_escape(s):
 	return str(s).replace("_", "\\_")
 
-def format_rho_latex(entry):
+def format_rho_latex(entry, bold=False):
 	if entry is None:
 		return ""
-	rho = entry["rho"]
-	p = entry["p"]
+	rho = entry[0]["rho"] * -100
+	p = entry[0]["p"]
+
 	if p < 0.01:
 		star = "$^{*}$"
 	elif p <= 0.05:
 		star = "$^{\\dagger}$"
 	else:
 		star = ""
-	return f"{rho:.3f}{star}"
+
+	val = f"{rho:.3f}"
+
+	if bold:
+		val = f"\\textbf{{{val}}}"
+
+	return f"{val}{star}"
+
+import numpy as np
+
+def bootstrap_mean_ci(entries, ci=95):
+	"""
+	entries: list of dicts with key 'rho'
+	returns mean, lower, upper
+	"""
+	if not entries:
+		return None, None, None
+
+	values = np.array([e["rho"] for e in entries])
+
+	mean = np.mean(values)
+
+	alpha = (100 - ci) / 2
+	lower = np.percentile(values, alpha)
+	upper = np.percentile(values, 100 - alpha)
+
+	return mean, lower, upper
 
 def format_rho(entry):
 	if entry is None:
 		return ""
-	rho = entry["rho"]
-	p = entry["p"]
+	rho = entry[0]["rho"] * -100
+	p = entry[0]["p"]
 	return f"{rho:.3f}{'*' if p < 0.05 else ''}"
 
 def format_n(entry):
 	if entry is None:
 		return ""
-	return str(entry["n"])
+	return str(entry[0]["n"])
 
 def sort_primeconditions(primeconditions):
 	try:
@@ -83,14 +127,16 @@ if __name__ == "__main__":
 	}
 
 	# ------------------------------------------------------------
-	# Load JSON
+	# Load JSON (bootstrap-aware)
 	# ------------------------------------------------------------
 	for entry in rhos.values():
+
 		dataset = entry["dataset"]
 		model = entry["model"]
 		component = entry["component"]
 		relation = entry["relation"]
 		isi = entry["isi"]
+		bs = entry.get("bootstrap")
 
 		if dataset not in conditions:
 			continue
@@ -100,77 +146,129 @@ if __name__ == "__main__":
 		if component not in conditions[dataset]["components"]:
 			conditions[dataset]["components"].append(component)
 
-		conditions[dataset]["rho_dict"].setdefault(model, {})
-		conditions[dataset]["rho_dict"][model].setdefault(component, {})
-		conditions[dataset]["rho_dict"][model][component].setdefault(relation, {})
+		rho_store = conditions[dataset]["rho_dict"]
 
-		conditions[dataset]["rho_dict"][model][component][relation][isi] = {
+		rho_store.setdefault(model, {})
+		rho_store[model].setdefault(component, {})
+		rho_store[model][component].setdefault(relation, {})
+		rho_store[model][component][relation].setdefault(isi, [])
+
+		rho_store[model][component][relation][isi].append({
 			"rho": entry["spearman_rho"],
 			"p": entry["p_value"],
-			"n": entry["n"]
-		}
+			"n": entry["n"],
+			"bs": bs
+		})
+	# ============================================================
+	# MEAN + CI LINE PLOTS (All models in one figure)
+	# ============================================================
 
-	# ============================================================
-	# Plotting
-	# ============================================================
+	import numpy as np
+
+
+	def bootstrap_mean_ci(entries, ci=95):
+		if not entries:
+			return None, None, None
+
+		values = np.array([e["rho"] for e in entries])
+
+		mean = np.mean(values)
+		alpha = (100 - ci) / 2
+		lower = np.percentile(values, alpha)
+		upper = np.percentile(values, 100 - alpha)
+
+		return mean, lower, upper
+
 
 	for dataset, data in conditions.items():
+
 		rho_dict = data["rho_dict"]
 		components = sorted(data["components"], key=component_sort_key)
+		models = sorted(rho_dict.keys())
 		primeconditions = sort_primeconditions(data["primeconditions"])
 
 		for relation in primeconditions:
 			for isi in ISIS:
 
-				plt.figure(figsize=(10, 6))
+				fig, ax = plt.subplots(figsize=(11, 5), constrained_layout=False)
+
+				x = np.arange(len(components))
+
 				plotted_any = False
 
-				for model, model_data in rho_dict.items():
-					xs, ys = [], []
+				for model in models:
+
+					means = []
+					lower_err = []
+					upper_err = []
 
 					for comp in components:
-						entry = (
-							model_data
+
+						entries = (
+							rho_dict
+							.get(model, {})
 							.get(comp, {})
 							.get(relation, {})
-							.get(isi)
+							.get(isi, [])
 						)
-						if entry is not None:
-							xs.append(comp)
-							ys.append(entry["rho"])
 
-					if ys:
-						plt.plot(xs, ys, marker="o", label=model)
-						plotted_any = True
+						if not entries:
+							means.append(np.nan)
+							lower_err.append(np.nan)
+							upper_err.append(np.nan)
+							continue
 
-						for x, y, comp in zip(xs, ys, xs):
-							p = (
-								model_data
-								.get(comp, {})
-								.get(relation, {})
-								.get(isi, {})
-								.get("p")
-							)
-							if p is not None and p < 0.05:
-								plt.text(x, y, "*", color="red",
-										 fontsize=14, ha="center", va="bottom")
+						mean, lower, upper = bootstrap_mean_ci(entries)
+
+						means.append(mean)
+						lower_err.append(mean - lower)
+						upper_err.append(upper - mean)
+
+					if not any(np.isfinite(means)):
+						continue
+
+					plotted_any = True
+
+					ax.errorbar(
+						x,
+						means,
+						yerr=[lower_err, upper_err],
+						fmt='o-',
+						capsize=4,
+						label=model
+					)
 
 				if not plotted_any:
-					plt.close()
+					plt.close(fig)
 					continue
 
-				plt.axhline(0, linestyle="--", linewidth=1)
-				plt.xticks(rotation=45, ha="right")
-				plt.ylabel("Spearman ρ (cosine vs RT)")
-				plt.xlabel("Component / Encoder layer")
-				plt.title(f"{dataset.upper()} | relation={relation} | isi={isi}")
-				plt.legend()
-				plt.tight_layout()
+				ax.axhline(0, linestyle="--", linewidth=1)
 
-				fname = f"{dataset}_rel{relation}_isi{isi}_model_comparison.png"
-				plt.savefig(os.path.join(args.graphs, fname))
-				plt.close()
+				ax.set_xticks(x)
+				ax.set_xticklabels(components, rotation=45, ha="right")
 
+				ax.set_ylabel("Mean Spearman $\\rho$")
+				ax.set_xlabel("Component / encoder layer")
+				ax.set_title(
+					f"{dataset.upper()} — {relation}, ISI {isi} ms"
+				)
+
+				ax.legend(
+					loc="center left",
+					bbox_to_anchor=(1.02, 0.5),
+					frameon=False
+				)
+
+				fname = f"{dataset}_rel{relation}_isi{isi}_meanCI_lines.png"
+
+				fig.tight_layout(rect=[0, 0, 0.82, 1])
+
+				fig.savefig(
+					os.path.join(args.graphs, fname),
+					bbox_inches="tight"
+				)
+
+				plt.close(fig)
 				print(f"Saved {fname}")
 
 	# ============================================================
@@ -223,8 +321,20 @@ if __name__ == "__main__":
 					f"{dataset}_rel{relation}_isi{isi}.tex"
 				)
 
+				# --- Precompute column maxima (after * -100) ---
+				column_max = {}
+
+				for model in models:
+					values = []
+					for comp in components:
+						entry = rho_dict.get(model, {}).get(comp, {}).get(relation, {}).get(isi)
+						if entry is not None:
+							values.append(entry[0]["rho"] * -100)
+
+					column_max[model] = max(values) if values else None
+
 				with open(rho_path, "w") as f:
-					f.write("\\begin{table}[ht]\n\\centering\n\\small\n")
+					f.write("\\begin{table*}[ht]\n\\centering\n\\small\n")
 					colspec = "l" + "c" * len(models)
 					f.write("\\begin{adjustbox}{max width=\\textwidth}\n")
 					f.write(f"\\begin{{tabular}}{{{colspec}}}\n")
@@ -236,17 +346,26 @@ if __name__ == "__main__":
 						row = [latex_escape(comp)]
 						for model in models:
 							entry = rho_dict.get(model, {}).get(comp, {}).get(relation, {}).get(isi)
-							row.append(format_rho_latex(entry))
+
+							is_bold = False
+							if entry is not None and column_max[model] is not None:
+								value = entry[0]["rho"] * -100
+								if value == column_max[model]:
+									is_bold = True
+
+							row.append(format_rho_latex(entry, bold=is_bold))
+
 						f.write(" & ".join(row) + " \\\\\n")
 
 					f.write("\\bottomrule\n\\end{tabular}\n\\end{adjustbox}\n")
 					f.write(
 						f"\\caption{{Spearman $\\rho$ between cosine similarity and RT "
 						f"({dataset.upper()}, relation {relation}, ISI={isi} ms). "
-						f"$^*$ $p<.01$, $^\\dagger$ $.01\\leq p \\leq .05$.}}\n"
+						f"$^*$ $p<.01$, $^\\dagger$ $.01\\leq p \\leq .05$. "
+						f"Bold = largest value within model.}}\n"
 					)
 					f.write(f"\\label{{tab:{dataset}_rel{relation}_isi{isi}}}\n")
-					f.write("\\end{table}\n")
+					f.write("\\end{table*}\n")
 
 				# ---------------- LaTeX n table ----------------
 				n_path = os.path.join(

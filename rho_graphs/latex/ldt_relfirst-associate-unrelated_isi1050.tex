@@ -1,0 +1,27 @@
+\begin{table}[ht]
+\centering
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lccccccc}
+\toprule
+Component & Aunsiels/ChildBERT & FacebookAI/xlm-roberta-base & albert-base-v2 & bert-base-uncased & distilbert-base-uncased & microsoft/mpnet-base & roberta-base \\
+\midrule
+word\_embeddings & 0.062$^{*}$ & 0.089$^{*}$ & 0.014 & 0.105$^{*}$ & 0.107$^{*}$ & -0.004 & 0.029$^{*}$ \\
+encoder\_layer\_1 & -0.091$^{*}$ & -0.147$^{*}$ & -0.065$^{*}$ & -0.092$^{*}$ & 0.017 & -0.173$^{*}$ & -0.132$^{*}$ \\
+encoder\_layer\_2 & -0.070$^{*}$ & -0.081$^{*}$ & -0.065$^{*}$ & -0.106$^{*}$ & 0.020$^{\dagger}$ & -0.185$^{*}$ & -0.105$^{*}$ \\
+encoder\_layer\_3 & -0.063$^{*}$ & -0.100$^{*}$ & -0.013 & -0.101$^{*}$ & -0.007 & -0.172$^{*}$ & -0.080$^{*}$ \\
+encoder\_layer\_4 & -0.066$^{*}$ & -0.111$^{*}$ & 0.000 & -0.119$^{*}$ & 0.016 & -0.157$^{*}$ & -0.051$^{*}$ \\
+encoder\_layer\_5 & -0.061$^{*}$ & -0.101$^{*}$ & 0.028$^{\dagger}$ & -0.069$^{*}$ & 0.024$^{\dagger}$ & -0.116$^{*}$ & -0.046$^{*}$ \\
+encoder\_layer\_6 & -0.052$^{*}$ & -0.107$^{*}$ & 0.041$^{*}$ & -0.020$^{\dagger}$ & 0.026$^{\dagger}$ & -0.058$^{*}$ & -0.034$^{*}$ \\
+encoder\_layer\_7 & -0.060$^{*}$ & -0.061$^{*}$ & 0.006 & -0.001 &  & -0.048$^{*}$ & -0.035$^{*}$ \\
+encoder\_layer\_8 & -0.052$^{*}$ & -0.080$^{*}$ & 0.017 & 0.016 &  & -0.141$^{*}$ & -0.033$^{*}$ \\
+encoder\_layer\_9 & -0.053$^{*}$ & -0.135$^{*}$ & -0.002 & 0.011 &  & -0.059$^{*}$ & -0.042$^{*}$ \\
+encoder\_layer\_10 & -0.043$^{*}$ & -0.138$^{*}$ & -0.000 & -0.000 &  & -0.069$^{*}$ & -0.066$^{*}$ \\
+encoder\_layer\_11 & -0.040$^{*}$ & -0.137$^{*}$ & 0.009 & -0.003 &  & -0.084$^{*}$ & -0.096$^{*}$ \\
+encoder\_layer\_12 & -0.034$^{*}$ & -0.142$^{*}$ & 0.014 & -0.021$^{\dagger}$ &  & -0.076$^{*}$ & -0.099$^{*}$ \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\caption{Spearman $\rho$ between cosine similarity and RT (LDT, relation first-associate-unrelated, ISI=1050 ms). $^*$ $p<.01$, $^\dagger$ $.01\leq p \leq .05$.}
+\label{tab:ldt_relfirst-associate-unrelated_isi1050}
+\end{table}

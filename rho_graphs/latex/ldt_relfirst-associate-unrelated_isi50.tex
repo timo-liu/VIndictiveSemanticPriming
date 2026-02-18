@@ -1,0 +1,27 @@
+\begin{table}[ht]
+\centering
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lccccccc}
+\toprule
+Component & Aunsiels/ChildBERT & FacebookAI/xlm-roberta-base & albert-base-v2 & bert-base-uncased & distilbert-base-uncased & microsoft/mpnet-base & roberta-base \\
+\midrule
+word\_embeddings & 0.124$^{*}$ & 0.088$^{*}$ & 0.034$^{*}$ & 0.147$^{*}$ & 0.150$^{*}$ & 0.024 & 0.041$^{*}$ \\
+encoder\_layer\_1 & -0.089$^{*}$ & -0.115$^{*}$ & -0.035$^{*}$ & -0.092$^{*}$ & 0.024$^{\dagger}$ & -0.217$^{*}$ & -0.147$^{*}$ \\
+encoder\_layer\_2 & -0.040$^{*}$ & -0.041$^{*}$ & -0.031$^{\dagger}$ & -0.127$^{*}$ & 0.062$^{*}$ & -0.188$^{*}$ & -0.109$^{*}$ \\
+encoder\_layer\_3 & -0.051$^{*}$ & -0.067$^{*}$ & 0.013 & -0.119$^{*}$ & 0.038$^{*}$ & -0.164$^{*}$ & -0.077$^{*}$ \\
+encoder\_layer\_4 & -0.050$^{*}$ & -0.072$^{*}$ & 0.017 & -0.136$^{*}$ & 0.039$^{*}$ & -0.147$^{*}$ & -0.058$^{*}$ \\
+encoder\_layer\_5 & -0.057$^{*}$ & -0.088$^{*}$ & -0.003 & -0.068$^{*}$ & 0.028$^{*}$ & -0.115$^{*}$ & -0.057$^{*}$ \\
+encoder\_layer\_6 & -0.047$^{*}$ & -0.094$^{*}$ & 0.010 & -0.012 & 0.007 & -0.029$^{\dagger}$ & -0.046$^{*}$ \\
+encoder\_layer\_7 & -0.061$^{*}$ & -0.048$^{*}$ & 0.004 & 0.004 &  & -0.003 & -0.053$^{*}$ \\
+encoder\_layer\_8 & -0.049$^{*}$ & -0.065$^{*}$ & 0.004 & 0.006 &  & -0.117$^{*}$ & -0.046$^{*}$ \\
+encoder\_layer\_9 & -0.037$^{*}$ & -0.117$^{*}$ & 0.005 & -0.018 &  & -0.043$^{*}$ & -0.054$^{*}$ \\
+encoder\_layer\_10 & -0.024$^{\dagger}$ & -0.114$^{*}$ & -0.011 & -0.025$^{\dagger}$ &  & -0.073$^{*}$ & -0.072$^{*}$ \\
+encoder\_layer\_11 & -0.015 & -0.118$^{*}$ & -0.014 & -0.023$^{\dagger}$ &  & -0.087$^{*}$ & -0.093$^{*}$ \\
+encoder\_layer\_12 & -0.011 & -0.120$^{*}$ & -0.018 & -0.029$^{*}$ &  & -0.083$^{*}$ & -0.100$^{*}$ \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\caption{Spearman $\rho$ between cosine similarity and RT (LDT, relation first-associate-unrelated, ISI=50 ms). $^*$ $p<.01$, $^\dagger$ $.01\leq p \leq .05$.}
+\label{tab:ldt_relfirst-associate-unrelated_isi50}
+\end{table}

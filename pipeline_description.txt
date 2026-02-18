@@ -1,4 +1,6 @@
 quickfix and format with quickfix.py
+quickfixaggregatefeature.py creates a preprocessed file that correectly assigns the primecondition to the proper string and drops ffeatures occuring <200 times
+
 compute embeddings with consolidateheatmaps.py # ./heatmaps.ps1
 plot rhos # rho_analysis.py
 compute rsa from the heatmaps (dissimilarity matrices) # rsa.py

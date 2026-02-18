@@ -3,18 +3,19 @@
 # ===========================
 
 $datasets = @(
-    @{ path = "data/naming_compressed.xlsx"; prefix = "nam" },
-    @{ path = "data/ldt_compressed.xlsx";                 prefix = "ldt" }
+    #@{ path = "data/nam_similar_v_associated.xlsx"; prefix = "nam" },
+    @{ path = "D:/Bootstraps/ldt_similar_v_associated.xlsx";                 prefix = "ldt" }
 )
 
 $models = @(
-    "bert-base-uncased",
-    "roberta-base",
-    "distilbert-base-uncased",
-    "microsoft/mpnet-base",
-    "Aunsiels/ChildBERT",
-    "albert-base-v2",
-    "FacebookAI/xlm-roberta-base"
+    #"bert-base-uncased",
+    #"roberta-base",
+    #"distilbert-base-uncased",
+    #"microsoft/mpnet-base",
+    #"Aunsiels/ChildBERT",
+    # "albert-base-v2",
+    # "FacebookAI/xlm-roberta-base",
+    "bert-large-uncased"
 )
 
 # Components to extract
@@ -35,10 +36,6 @@ $components = @(
     "encoder_layer_12"
 )
 
-# ===========================
-# Execution
-# ===========================
-
 foreach ($dataset in $datasets) {
     foreach ($model in $models) {
         foreach ($component in $components) {
@@ -50,7 +47,9 @@ foreach ($dataset in $datasets) {
                 -c "$component" `
                 -i "$model" `
                 -p "$($dataset.prefix)" `
-                --aggregate
+                --rhos "D:/bucket_priming/rhos.json" `
+                --cache "D:/bucket_priming" `
+                --bs 500
         }
     }
 }

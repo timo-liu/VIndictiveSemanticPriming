@@ -58,6 +58,7 @@ if __name__ == "__main__":
     arg_parser = argparse.ArgumentParser()
     arg_parser.add_argument("-i", "--input", required=False, default="data/all naming subjects.xlsx")
     arg_parser.add_argument("-r", "--relations", required=False, default="data/items_spreadsheet.xls")
+    arg_parser.add_argument("-o", "--output")
     args = arg_parser.parse_args()
 
     # ---------- Load main dataset ----------
@@ -91,5 +92,16 @@ if __name__ == "__main__":
         new_col="relation1_o-t"
     )
 
+    # let's assume that LSA captures the associative features
+
+    dataset = add_relation_column(
+        dataset,
+        args.relations,
+        sheet_name="first associate",
+        prime_col="prime_first associate",
+        relation_col="LSA_f-t",
+        new_col="LSA_f-t"
+    )
+
     # ---------- Save ----------
-    dataset.to_excel(args.input, index=False)
+    dataset.to_excel(args.output, index=False)
