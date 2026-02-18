@@ -1,0 +1,20 @@
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{lcccccccc}
+\toprule
+Model & Aunsiels/ChildBERT & FacebookAI/xlm-roberta-base & albert-base-v2 & bert-base-uncased & bert-large-uncased & distilbert-base-uncased & microsoft/mpnet-base & roberta-base \\
+\midrule
+Aunsiels/ChildBERT & 1.000$^{*}$ & 0.038 & -0.049 & 0.527 & 0.654$^{\dagger}$ & 0.000 & 0.022 & 0.005 \\
+FacebookAI/xlm-roberta-base & 0.038 & 1.000$^{*}$ & -0.214 & 0.000 & -0.390 & 0.536 & 0.687$^{*}$ & 0.747$^{*}$ \\
+albert-base-v2 & -0.049 & -0.214 & 1.000$^{*}$ & -0.214 & 0.269 & 0.250 & -0.159 & -0.214 \\
+bert-base-uncased & 0.527 & 0.000 & -0.214 & 1.000$^{*}$ & 0.747$^{*}$ & 0.750 & 0.159 & 0.396 \\
+bert-large-uncased & 0.654$^{\dagger}$ & -0.390 & 0.269 & 0.747$^{*}$ & 1.000$^{*}$ & 0.214 & -0.104 & -0.049 \\
+distilbert-base-uncased & 0.000 & 0.536 & 0.250 & 0.750 & 0.214 & 1.000$^{*}$ & 0.571 & 0.714 \\
+microsoft/mpnet-base & 0.022 & 0.687$^{*}$ & -0.159 & 0.159 & -0.104 & 0.571 & 1.000$^{*}$ & 0.681$^{\dagger}$ \\
+roberta-base & 0.005 & 0.747$^{*}$ & -0.214 & 0.396 & -0.049 & 0.714 & 0.681$^{\dagger}$ & 1.000$^{*}$ \\
+\bottomrule
+\end{tabular}
+\caption{Spearman correlation between layerwise mean $\rho$ profiles of models (LDT, relation similar, ISI=1050 ms). $^*$ $p<.01$, $^\dagger$ $.01\leq p \leq .05$.}
+\label{tab:ldt_relsimilar_isi1050_modelxmodel}
+\end{table}

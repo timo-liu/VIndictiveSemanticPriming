@@ -5,82 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d968c9d-637b-456c-b0b0-6e91dfb57bdb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/VindictiveSemanticPriming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VindictiveSemanticPriming.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline_description.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline_description.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickfix.py" beforeDir="false" afterPath="$PROJECT_DIR$/quickfix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickfixaggregatefeature.py" beforeDir="false" afterPath="$PROJECT_DIR$/quickfixaggregatefeature.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_17_graphs/latex/ldt_relassociated_isi1050.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_17_graphs/latex/ldt_relassociated_isi1050_n.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_17_graphs/latex/ldt_relassociated_isi50.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_17_graphs/latex/ldt_relassociated_isi50_n.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_17_graphs/latex/ldt_relsimilar_isi1050.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_17_graphs/latex/ldt_relsimilar_isi1050_n.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_17_graphs/latex/ldt_relsimilar_isi50.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_17_graphs/latex/ldt_relsimilar_isi50_n.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_17_graphs/ldt_relassociated_isi1050_meanCI_lines.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_17_graphs/ldt_relassociated_isi50_meanCI_lines.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_17_graphs/ldt_relsimilar_isi1050_meanCI_lines.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_17_graphs/ldt_relsimilar_isi50_meanCI_lines.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/full_pipeline_frfr.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/full_pipeline_frfr.ps1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rho_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/rho_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relaggregated_isi1050.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relaggregated_isi1050.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relaggregated_isi1050_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relaggregated_isi1050_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relaggregated_isi50.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relaggregated_isi50.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relaggregated_isi50_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relaggregated_isi50_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relantonym_isi1050.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relantonym_isi1050.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relantonym_isi1050_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relantonym_isi1050_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relantonym_isi50.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relantonym_isi50.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relantonym_isi50_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relantonym_isi50_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relbpa_isi1050.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relbpa_isi1050.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relbpa_isi1050_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relbpa_isi1050_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relbpa_isi50.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relbpa_isi50.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relbpa_isi50_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relbpa_isi50_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relcategory_isi1050.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relcategory_isi1050.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relcategory_isi1050_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relcategory_isi1050_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relcategory_isi50.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relcategory_isi50.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relcategory_isi50_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relcategory_isi50_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relfpa_isi1050.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relfpa_isi1050.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relfpa_isi1050_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relfpa_isi1050_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relfpa_isi50.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relfpa_isi50.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relfpa_isi50_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relfpa_isi50_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relfunctional property_isi1050.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relfunctional property_isi1050.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relfunctional property_isi1050_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relfunctional property_isi1050_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relfunctional property_isi50.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relfunctional property_isi50.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relfunctional property_isi50_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relfunctional property_isi50_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relperceptual property_isi1050.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relperceptual property_isi1050.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relperceptual property_isi1050_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relperceptual property_isi1050_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relperceptual property_isi50.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relperceptual property_isi50.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relperceptual property_isi50_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relperceptual property_isi50_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relscript_isi1050.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relscript_isi1050.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relscript_isi1050_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relscript_isi1050_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relscript_isi50.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relscript_isi50.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relscript_isi50_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relscript_isi50_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relsupraordinate_isi1050.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relsupraordinate_isi1050.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relsupraordinate_isi1050_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relsupraordinate_isi1050_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relsupraordinate_isi50.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relsupraordinate_isi50.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relsupraordinate_isi50_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relsupraordinate_isi50_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relsynonym_isi1050.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relsynonym_isi1050.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relsynonym_isi1050_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relsynonym_isi1050_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relsynonym_isi50.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relsynonym_isi50.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relsynonym_isi50_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relsynonym_isi50_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relunclassified_isi1050.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relunclassified_isi1050.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relunclassified_isi1050_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relunclassified_isi1050_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relunclassified_isi50.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relunclassified_isi50.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/latex/ldt_relunclassified_isi50_n.tex" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/latex/ldt_relunclassified_isi50_n.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relaggregated_isi1050_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relaggregated_isi1050_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relaggregated_isi50_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relaggregated_isi50_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relantonym_isi1050_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relantonym_isi1050_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relantonym_isi50_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relantonym_isi50_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relbpa_isi1050_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relbpa_isi1050_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relbpa_isi50_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relbpa_isi50_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relcategory_isi1050_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relcategory_isi1050_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relcategory_isi50_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relcategory_isi50_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relfpa_isi1050_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relfpa_isi1050_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relfpa_isi50_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relfpa_isi50_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relfunctional property_isi1050_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relfunctional property_isi1050_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relfunctional property_isi50_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relfunctional property_isi50_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relperceptual property_isi1050_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relperceptual property_isi1050_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relperceptual property_isi50_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relperceptual property_isi50_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relscript_isi1050_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relscript_isi1050_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relscript_isi50_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relscript_isi50_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relsupraordinate_isi1050_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relsupraordinate_isi1050_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relsupraordinate_isi50_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relsupraordinate_isi50_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relsynonym_isi1050_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relsynonym_isi1050_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relsynonym_isi50_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relsynonym_isi50_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relunclassified_isi1050_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relunclassified_isi1050_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rho_graphs/ldt_relunclassified_isi50_model_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/rho_graphs/ldt_relunclassified_isi50_model_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/run_aggregated.ps1" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
