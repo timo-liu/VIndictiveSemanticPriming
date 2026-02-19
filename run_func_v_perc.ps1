@@ -4,7 +4,7 @@
 
 $datasets = @(
     #@{ path = "data/nam_similar_v_associated.xlsx"; prefix = "nam" },
-    @{ path = "data/nam_func_v_perc.xlsx";                 prefix = "ldt" }
+    @{ path = "data/ldt_func_v_perc.xlsx";                 prefix = "ldt" }
 )
 
 $models = @(

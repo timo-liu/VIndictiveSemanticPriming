@@ -5,6 +5,8 @@ import pandas as pd
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-i","--input",help="input excel file")
+    parser.add_argument("--a", default = "similar")
+    parser.add_argument("--b", default="associated")
     args = parser.parse_args()
 
     data = pd.read_excel(args.input)
@@ -18,11 +20,11 @@ if __name__ == "__main__":
 
     for isi in isis:
         similar_data = data.loc[
-            (data["relation"] == "similar") & (data["isi"] == isi)
+            (data["relation"] == args.a) & (data["isi"] == isi)
         ].copy()
 
         associated_data = data.loc[
-            (data["relation"] == "associated") & (data["isi"] == isi)
+            (data["relation"] == args.b) & (data["isi"] == isi)
         ].copy()
 
         x = similar_data[col].astype(float).dropna()
@@ -30,9 +32,13 @@ if __name__ == "__main__":
 
         if len(x) > 1 and len(y) > 1:
             t_stat, p_value = stats.ttest_ind(x, y, equal_var=False)
-            print(f"\nTwo-sided Welch t-test (similar vs associated | isi={isi})")
+            print("="*50)
+            print(f"\nTwo-sided Welch t-test ({args.a} vs {args.b} | isi={isi})")
             print(f"t = {t_stat:.6f}")
             print(f"p = {p_value:.6f}")
+            print(f"Mean of group {args.a} = {x.mean():.3f}")
+            print(f"Mean of group {args.b} = {y.mean():.3f}")
+            print("=" * 50)
 
     # --------------------------------------------------
     # 2) Between ISIs within each condition
@@ -64,3 +70,7 @@ if __name__ == "__main__":
                     print(f"\nTwo-sided Welch t-test ({relation} | isi={isi1} vs isi={isi2})")
                     print(f"t = {t_stat:.6f}")
                     print(f"p = {p_value:.6f}")
+                    print("=" * 50)
+                    print(f"Mean of group {isi1} = {x.mean():.3f}")
+                    print(f"Mean of group {isi2} = {y.mean():.3f}")
+                    print("=" * 50)

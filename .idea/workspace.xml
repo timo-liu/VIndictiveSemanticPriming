@@ -6,20 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="2d968c9d-637b-456c-b0b0-6e91dfb57bdb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_17_graphs/latex/ldt_relassociated_isi1050.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_17_graphs/latex/ldt_relassociated_isi1050_n.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_17_graphs/latex/ldt_relassociated_isi50.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_17_graphs/latex/ldt_relassociated_isi50_n.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_17_graphs/latex/ldt_relsimilar_isi1050.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_17_graphs/latex/ldt_relsimilar_isi1050_n.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_17_graphs/latex/ldt_relsimilar_isi50.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_17_graphs/latex/ldt_relsimilar_isi50_n.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_17_graphs/ldt_relassociated_isi1050_meanCI_lines.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_17_graphs/ldt_relassociated_isi50_meanCI_lines.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_17_graphs/ldt_relsimilar_isi1050_meanCI_lines.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_17_graphs/ldt_relsimilar_isi50_meanCI_lines.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/full_pipeline_frfr.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/full_pipeline_frfr.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_17_graphs/ldt_associated_isi1050.png" beforeDir="false" afterPath="$PROJECT_DIR$/2_17_graphs/ldt_associated_isi1050.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_17_graphs/ldt_associated_isi50.png" beforeDir="false" afterPath="$PROJECT_DIR$/2_17_graphs/ldt_associated_isi50.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_17_graphs/ldt_associated_minus_similar_isi1050.png" beforeDir="false" afterPath="$PROJECT_DIR$/2_17_graphs/ldt_associated_minus_similar_isi1050.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_17_graphs/ldt_associated_minus_similar_isi50.png" beforeDir="false" afterPath="$PROJECT_DIR$/2_17_graphs/ldt_associated_minus_similar_isi50.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_17_graphs/ldt_similar_isi1050.png" beforeDir="false" afterPath="$PROJECT_DIR$/2_17_graphs/ldt_similar_isi1050.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_17_graphs/ldt_similar_isi50.png" beforeDir="false" afterPath="$PROJECT_DIR$/2_17_graphs/ldt_similar_isi50.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rho_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/rho_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_func_v_perc.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/run_func_v_perc.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sanity_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/sanity_check.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -20,6 +20,17 @@ plt.rcParams.update({
     "lines.markersize": 3,
 })
 
+MODEL_DISPLAY = {
+    "Aunsiels/ChildBERT": "ChildBERT",
+    "FacebookAI/xlm-roberta-base": "XLM-R",
+    "albert-base-v2": "ALBERT",
+    "bert-base-uncased": "BERT-base",
+    "bert-large-uncased": "BERT-large",
+    "distilbert-base-uncased": "DistilBERT",
+    "microsoft/mpnet-base": "MPNet",
+    "roberta-base": "RoBERTa",
+}
+
 
 # ============================================================
 # Utils
@@ -170,7 +181,7 @@ if __name__ == "__main__":
                         yerr=[lower_err, upper_err],
                         fmt='o-',
                         capsize=4,
-                        label=model
+                        label=MODEL_DISPLAY.get(model, model)
                     )
 
                 if not plotted_any:
@@ -209,9 +220,9 @@ if __name__ == "__main__":
             fig, ax = plt.subplots(figsize=(11, 5))
             x = np.arange(len(components))
             plotted_any = False
+            all_model_means = []
 
             for model in models:
-
                 means = []
                 lower_err = []
                 upper_err = []
@@ -244,6 +255,123 @@ if __name__ == "__main__":
                     a_dict = {e["bs"]: e["rho"] for e in a_entries}
 
                     common_bs = sorted(set(a_dict.keys()) & set(b_dict.keys()))
+                    if not common_bs:
+                        means.append(np.nan)
+                        lower_err.append(np.nan)
+                        upper_err.append(np.nan)
+                        continue
+
+                    diff_vals = np.array([a_dict[b] - b_dict[b] for b in common_bs])
+                    mean = np.mean(diff_vals)
+                    lower = np.percentile(diff_vals, 2.5)
+                    upper = np.percentile(diff_vals, 97.5)
+
+                    if ("distil" not in model) and ("albert" not in model):
+                        means.append(mean)
+                    lower_err.append(mean - lower)
+                    upper_err.append(upper - mean)
+
+                if not any(np.isfinite(means)):
+                    continue
+
+                plotted_any = True
+                all_model_means.append(means)
+
+                ax.errorbar(
+                    x,
+                    means,
+                    yerr=[lower_err, upper_err],
+                    fmt='o-',
+                    capsize=4,
+                    label=MODEL_DISPLAY.get(model, model)
+                )
+
+            if not plotted_any:
+                plt.close(fig)
+                continue
+
+            # -----------------------------
+            # Plot average across all models
+            # -----------------------------
+            if all_model_means:
+                stacked = np.array(all_model_means)  # shape: (num_models, num_components)
+                avg_means = np.nanmean(stacked, axis=0)
+                ax.plot(
+                    x,
+                    avg_means,
+                    linestyle="--",
+                    linewidth=3,
+                    color="black",
+                    label="Model Average"
+                )
+
+            ax.axhline(0, linestyle="--", linewidth=1)
+            ax.set_xticks(x)
+            ax.set_xticklabels(components, rotation=45, ha="right")
+            ax.set_ylim(-0.25, 0.25)
+            ax.set_ylabel(f"$\\rho$ ({args.a.capitalize()} - {args.b.capitalize()})")
+            ax.set_xlabel("Component / encoder layer")
+            ax.set_title(f"{args.a.capitalize()} − {args.b.capitalize()}, ISI {isi} ms")
+            ax.legend(loc="center left", bbox_to_anchor=(1.02, 0.5), frameon=False)
+            fig.tight_layout(rect=[0, 0, 0.82, 1])
+
+            fname = f"{dataset}_{args.a}_minus_{args.b}_isi{isi}.png"
+            fig.savefig(os.path.join(args.graphs, fname), bbox_inches="tight")
+            plt.close(fig)
+
+            print(f"Saved {fname}")
+
+    # ============================================================
+    # ISI DIFFERENCE PLOTS (50 - 1050) WITHIN EACH RELATION
+    # ============================================================
+
+    for dataset, data in conditions.items():
+
+        rho_dict = data["rho_dict"]
+        components = sorted(data["components"], key=component_sort_key)
+        models = sorted(rho_dict.keys())
+
+        for relation in [args.a, args.b]:
+
+            fig, ax = plt.subplots(figsize=(11, 5))
+            x = np.arange(len(components))
+            plotted_any = False
+            all_model_means = []
+
+            for model in models:
+
+                means = []
+                lower_err = []
+                upper_err = []
+
+                for comp in components:
+
+                    isi50_entries = (
+                        rho_dict
+                        .get(model, {})
+                        .get(comp, {})
+                        .get(relation, {})
+                        .get(50, [])
+                    )
+
+                    isi1050_entries = (
+                        rho_dict
+                        .get(model, {})
+                        .get(comp, {})
+                        .get(relation, {})
+                        .get(1050, [])
+                    )
+
+                    if not isi50_entries or not isi1050_entries:
+                        means.append(np.nan)
+                        lower_err.append(np.nan)
+                        upper_err.append(np.nan)
+                        continue
+
+                    d50 = {e["bs"]: e["rho"] for e in isi50_entries}
+                    d1050 = {e["bs"]: e["rho"] for e in isi1050_entries}
+
+                    common_bs = sorted(set(d50.keys()) & set(d1050.keys()))
 
                     if not common_bs:
                         means.append(np.nan)
@@ -251,11 +379,7 @@ if __name__ == "__main__":
                         upper_err.append(np.nan)
                         continue
 
-                    diff_vals = np.array([
-                        a_dict[b] - b_dict[b]
-                        for b in common_bs
-                    ])
-
+                    diff_vals = np.array([d50[b] - d1050[b] for b in common_bs])
                     mean = np.mean(diff_vals)
                     lower = np.percentile(diff_vals, 2.5)
                     upper = np.percentile(diff_vals, 97.5)
@@ -268,6 +392,7 @@ if __name__ == "__main__":
                     continue
 
                 plotted_any = True
+                all_model_means.append(means)
 
                 ax.errorbar(
                     x,
@@ -275,32 +400,45 @@ if __name__ == "__main__":
                     yerr=[lower_err, upper_err],
                     fmt='o-',
                     capsize=4,
-                    label=model
+                    label=MODEL_DISPLAY.get(model, model)
                 )
 
             if not plotted_any:
                 plt.close(fig)
                 continue
 
+            # -----------------------------
+            # Plot average across all models
+            # -----------------------------
+            if all_model_means:
+                stacked = np.array(all_model_means)  # shape: (num_models, num_components)
+                avg_means = np.nanmean(stacked, axis=0)
+                ax.plot(
+                    x,
+                    avg_means,
+                    linestyle="--",
+                    linewidth=3,
+                    color="black",
+                    label="Model Average"
+                )
+
             ax.axhline(0, linestyle="--", linewidth=1)
             ax.set_xticks(x)
             ax.set_xticklabels(components, rotation=45, ha="right")
             ax.set_ylim(-0.25, 0.25)
 
-            ax.set_ylabel(
-                f"$\\rho$ ({args.a.capitalize()} - {args.b.capitalize()})"
-            )
-
+            ax.set_ylabel(f"$\\rho$ (ISI 50 - ISI 1050)")
             ax.set_xlabel("Component / encoder layer")
-            ax.set_title(
-                f"{args.a.capitalize()} − {args.b.capitalize()}, ISI {isi} ms"
-            )
+            ax.set_title(f"{relation.capitalize()}: ISI 50 − ISI 1050")
 
             ax.legend(loc="center left", bbox_to_anchor=(1.02, 0.5), frameon=False)
             fig.tight_layout(rect=[0, 0, 0.82, 1])
 
-            fname = f"{dataset}_{args.a}_minus_{args.b}_isi{isi}.png"
+            fname = f"{dataset}_{relation}_isi50_minus_isi1050.png"
             fig.savefig(os.path.join(args.graphs, fname), bbox_inches="tight")
             plt.close(fig)
 
             print(f"Saved {fname}")
+
+
+
